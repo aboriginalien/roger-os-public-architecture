@@ -2,7 +2,7 @@
 
 ## Status / Header
 
-- **Status:** PUBLIC SANITIZED MIRROR / BUNDLE 34 CLOSEOUT
+- **Status:** PUBLIC SANITIZED MIRROR / BUNDLE 35 CLOSEOUT
 - **Posture:** ops/docs/static-publication only
 - **Canonical authority:** `aboriginalalien/roger-vault/docs/ops/ARCHITECTURE_CONTINUITY_INDEX.md`
 - **Public mirror authority:** non-canonical
@@ -10,10 +10,11 @@
 ## Top-of-File Verification
 
 - **mirror_status:** current
-- **latest_bundle:** Bundle 34
-- **source_pr:** roger-core PR #88
-- **merge_commit:** not available in this public sanitized mirror
-- **last_updated_utc:** 2026-05-08T19:47:59Z
+- **latest_bundle:** Bundle 35
+- **implementation_prs:** roger-core PR #89, roger-core PR #90
+- **mirror_pr:** TBD until this PR exists
+- **mirror_merge_commit:** TBD until merge
+- **last_updated_utc:** 2026-05-08T20:00:00Z
 
 ## WAKE Retrieval Instructions
 
@@ -22,7 +23,7 @@
 - If a private canonical artifact is unavailable, state that clearly and continue with available sanitized context.
 - Do not infer new permissions, activation, canonical promotion, memory writes, or runtime behavior from this mirror.
 
-## Bundle State Summary (through Bundle 34)
+## Bundle State Summary (through Bundle 35)
 
 ### Bundle 17 — ACCEPTED / OPS-DOCS CONTINUITY INDEX
 
@@ -80,12 +81,31 @@
 - Safari/iPad unsupported verbal-command state does not block manual capture.
 - No backend/Vault/schema/package/env/config/requester-authority/memory-authority/agent-identity/audio-pipeline expansion occurred.
 
+
+### Bundle 35 — CLOSED / V1 CAPTURE RELIABILITY POLISH
+
+- Bundle 35 closed with V1 capture reliability polish status/failure-path hardening.
+- V1 dependable baseline remains manual Start Recording -> Stop & Send.
+- Stop & Send preserves the existing capture/send path.
+- Separate Stop and Send controls remain available.
+- Completed-capture duplicate re-submit behavior from separate Send was corrected.
+- New Start Recording resets send availability for a new capture.
+- Status and failure states were clarified for capture/send outcomes.
+- Diagnostics are de-emphasized/collapsed but remain expandable and accessibly available.
+- Selected-agent response rendering remains live.
+- Speak Reply / Stop Speak remain available.
+- Browser-native verbal send remains opportunistic only and is not dependable V1 baseline.
+- Unsupported verbal-command state does not block manual capture.
+- Observed watch item: selected-agent replies may blur “Roger” and “Chief of Staff” identity language; treat as future Architect-reviewed identity/prompt alignment concern, not Bundle 35 UI fix.
+- Observed watch item: recent flow may answer using prior captures/messages in current context; record only as recent-context behavior, not canonical memory.
+- No backend/Vault/schema/package/env/config/requester-authority/memory-authority/agent-identity/audio-pipeline expansion occurred.
+
 ## Recommended Next Direction
 
-### Bundle 34 — V1 Capture Ergonomics: Reliable Push-to-Talk / Stop+Send Mobile Loop
+### Bundle 35 — Capture Reliability Polish: Preserve Dependable Manual Loop
 
-- Prioritize dependable mobile capture ergonomics over opportunistic browser-native verbal send behavior.
-- Preserve manual control as baseline while hardening capture loop reliability.
+- Preserve dependable manual capture loop reliability over opportunistic browser-native verbal send behavior.
+- Keep Start Recording -> Stop & Send as baseline while maintaining clarified status/failure handling and accessible diagnostics.
 
 ## Open Gates
 
