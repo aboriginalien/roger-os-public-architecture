@@ -2,10 +2,18 @@
 
 ## Status / Header
 
-- **Status:** PUBLIC SANITIZED MIRROR / BUNDLE 33 CLOSEOUT
+- **Status:** PUBLIC SANITIZED MIRROR / BUNDLE 34 CLOSEOUT
 - **Posture:** ops/docs/static-publication only
 - **Canonical authority:** `aboriginalalien/roger-vault/docs/ops/ARCHITECTURE_CONTINUITY_INDEX.md`
 - **Public mirror authority:** non-canonical
+
+## Top-of-File Verification
+
+- **mirror_status:** current
+- **latest_bundle:** Bundle 34
+- **source_pr:** roger-core PR #88
+- **merge_commit:** not available in this public sanitized mirror
+- **last_updated_utc:** 2026-05-08T19:47:59Z
 
 ## WAKE Retrieval Instructions
 
@@ -14,7 +22,7 @@
 - If a private canonical artifact is unavailable, state that clearly and continue with available sanitized context.
 - Do not infer new permissions, activation, canonical promotion, memory writes, or runtime behavior from this mirror.
 
-## Bundle State Summary (through Bundle 33)
+## Bundle State Summary (through Bundle 34)
 
 ### Bundle 17 — ACCEPTED / OPS-DOCS CONTINUITY INDEX
 
@@ -57,6 +65,20 @@
 - Speak Reply / Stop Speak remained available.
 - No backend/Vault/schema/package/env/config/requester-authority/memory/audio-pipeline expansion occurred.
 - Observed-code reconciliation artifact pointer (public-safe): `docs/adr/ADR-008-observed-code-reconciliation.md` (if present in canonical/private context).
+
+### Bundle 34 — CLOSED / V1 CAPTURE ERGONOMICS IMPROVEMENT
+
+- Bundle 34 closed as capture ergonomics improvement.
+- Bundle 33 remains closed with implementation limitation.
+- V1 dependable baseline is manual Start Recording -> Stop & Send.
+- Browser-native verbal send remains opportunistic only.
+- Bundle 34 added a large mobile-friendly Stop & Send primary action during active recording.
+- Stop & Send uses the existing capture/send path.
+- Separate Stop and Send controls remain available as fallback/manual controls.
+- Selected-agent response rendering remains live.
+- Speak Reply / Stop Speak remain available.
+- Safari/iPad unsupported verbal-command state does not block manual capture.
+- No backend/Vault/schema/package/env/config/requester-authority/memory-authority/agent-identity/audio-pipeline expansion occurred.
 
 ## Recommended Next Direction
 
