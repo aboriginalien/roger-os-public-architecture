@@ -2,7 +2,7 @@
 
 ## Status / Header
 
-- **Status:** PUBLIC SANITIZED MIRROR / BUNDLE 20.5
+- **Status:** PUBLIC SANITIZED MIRROR / BUNDLE 33 CLOSEOUT
 - **Posture:** ops/docs/static-publication only
 - **Canonical authority:** `aboriginalalien/roger-vault/docs/ops/ARCHITECTURE_CONTINUITY_INDEX.md`
 - **Public mirror authority:** non-canonical
@@ -14,7 +14,7 @@
 - If a private canonical artifact is unavailable, state that clearly and continue with available sanitized context.
 - Do not infer new permissions, activation, canonical promotion, memory writes, or runtime behavior from this mirror.
 
-## Bundle State Summary (through Bundle 20.5)
+## Bundle State Summary (through Bundle 33)
 
 ### Bundle 17 — ACCEPTED / OPS-DOCS CONTINUITY INDEX
 
@@ -40,14 +40,38 @@
 - Finding: private repo raw/blob URLs were not publicly accessible unauthenticated.
 - Do not use the private repo raw/blob URLs in Architect instruction field.
 
-### Bundle 20.5 — PUBLIC SANITIZED MIRROR
+### Bundle 20.5 — CLOSED / PUBLIC SANITIZED MIRROR BOOTSTRAP
 
-- Purpose: create public sanitized read-only mirror for Architect continuity retrieval.
-- No instruction-field update until Architect verifies final public URL.
+- Purpose: establish public sanitized read-only mirror for Architect continuity retrieval.
+- This mirror remains non-canonical and retrieval-only.
+
+### Bundle 33 — CLOSED / ARCHITECTURAL SUCCESS WITH IMPLEMENTATION LIMITATION
+
+- Final state: closed as architectural success with implementation limitation.
+- Browser-native `SpeechRecognition` / `webkitSpeechRecognition` is opportunistic only for V1.
+- Dependable V1 interaction baseline remains **Manual Stop / Send**.
+- Live Safari/iPad path observed `service-not-allowed` limitation.
+- On tested Safari/iPad path, “Roger, send” and “Roger, stop” did not trigger stop/send.
+- Manual fallback continued to work on the tested path.
+- Selected-agent response rendering worked.
+- Speak Reply / Stop Speak remained available.
+- No backend expansion.
+- No Vault/schema/package/env/config expansion.
+- No requester-authority activation.
+- No new memory/write path.
+- No Intercom-as-agent behavior.
+- Observed-code reconciliation artifact pointer (public-safe): `docs/adr/ADR-008-observed-code-reconciliation.md` (if present in canonical/private context).
+
+## Recommended Next Direction
+
+### Bundle 34 — V1 Capture Ergonomics: Reliable Push-to-Talk / Stop+Send Mobile Loop
+
+- Prioritize dependable mobile capture ergonomics over opportunistic browser-native verbal send behavior.
+- Preserve manual control as baseline while hardening capture loop reliability.
 
 ## Open Gates
 
-- Architect must independently verify blob URL and raw URL before any instruction-field update.
+- Architect should verify this public mirror raw URL for current continuity retrieval state.
 - Roger Core deployment topology remains unresolved.
 - Do not assume `/opt/roger-core` exists.
 - Before production requester-authority activation, protected Vault mutation, or canonical promotion, require approved cross-process requester-context provenance/signing/verification implementation.
