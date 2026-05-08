@@ -47,19 +47,15 @@
 
 ### Bundle 33 — CLOSED / ARCHITECTURAL SUCCESS WITH IMPLEMENTATION LIMITATION
 
-- Final state: closed as architectural success with implementation limitation.
-- Browser-native `SpeechRecognition` / `webkitSpeechRecognition` is opportunistic only for V1.
-- Dependable V1 interaction baseline remains **Manual Stop / Send**.
-- Live Safari/iPad path observed `service-not-allowed` limitation.
+- Bundle 33 closed with implementation limitation.
+- Browser-native `SpeechRecognition` / `webkitSpeechRecognition` is opportunistic only.
+- It is not dependable V1 behavior.
+- Safari/iPad live verification returned `service-not-allowed`.
 - On tested Safari/iPad path, “Roger, send” and “Roger, stop” did not trigger stop/send.
-- Manual fallback continued to work on the tested path.
-- Selected-agent response rendering worked.
+- Manual Stop/Send remains dependable V1 baseline.
+- Selected-agent response rendering remained live.
 - Speak Reply / Stop Speak remained available.
-- No backend expansion.
-- No Vault/schema/package/env/config expansion.
-- No requester-authority activation.
-- No new memory/write path.
-- No Intercom-as-agent behavior.
+- No backend/Vault/schema/package/env/config/requester-authority/memory/audio-pipeline expansion occurred.
 - Observed-code reconciliation artifact pointer (public-safe): `docs/adr/ADR-008-observed-code-reconciliation.md` (if present in canonical/private context).
 
 ## Recommended Next Direction
