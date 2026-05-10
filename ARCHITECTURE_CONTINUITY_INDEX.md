@@ -2,7 +2,7 @@
 
 ## Status / Header
 
-- **Status:** PUBLIC SANITIZED MIRROR / BUNDLE 49 CLOSEOUT
+- **Status:** PUBLIC SANITIZED MIRROR / BUNDLE 50 CLOSEOUT
 - **Posture:** ops/docs/static-publication only
 - **Canonical authority:** `aboriginalalien/roger-vault/docs/ops/ARCHITECTURE_CONTINUITY_INDEX.md`
 - **Public mirror authority:** non-canonical
@@ -10,12 +10,12 @@
 ## Top-of-File Verification
 
 - **mirror_status:** current
-- **latest_bundle:** Bundle 49
-- **implementation_prs:** roger-core PR #108 / docs-only
+- **latest_bundle:** Bundle 50
+- **implementation_prs:** roger-core PR #109 / docs-only
 - **mirror_pr:** TBD until this PR exists
 - **mirror_merge_commit:** TBD until merged
-- **last_updated_utc:** 2026-05-10T20:05:00Z
-- **recommended_next_direction:** Possible next decision: Architect/Operator review whether Bundle 50 should verify backend/control-plane support for `agent_creator` as an active-agent switch target, or require further architecture before activation. Do not imply Bundle 50 activation is approved.
+- **last_updated_utc:** 2026-05-10T20:25:00Z
+- **recommended_next_direction:** Possible next decision: Architect/Operator review whether Bundle 51 should define an Agent Creator control-plane registration contract, no activation.
 
 ## WAKE Retrieval Instructions
 
@@ -329,10 +329,29 @@
 - No voice-provider runtime implementation.
 - No memory/Vault/requester/tool authority expansion.
 
+### Bundle 50 — CLOSED / PUBLIC ARCHITECTURE CONTINUITY INDEX CLOSEOUT, SANITIZED/NON-CANONICAL
+
+- implementation_prs: roger-core PR #109 / docs-only.
+- Control-plane compatibility verification completed.
+- Agent Creator remains static candidate dossier metadata only.
+- Agent Creator was not proven as a runtime-registered backend/control-plane active-agent switch target.
+- `/v1/agent/switch` was treated as mutating and was not called.
+- No Agent Creator activation.
+- No live switch to `agent_creator`.
+- No selected-agent routing changes.
+- No runtime dossier editing.
+- No custom-agent creation UI.
+- No backend/API/schema/package/env/config/deploy changes.
+- No workspace/mission-room implementation.
+- No Laboratory activation.
+- No voice-provider runtime implementation.
+- No memory/Vault/requester/tool authority expansion.
+- No private/raw Agent Creator source text copied.
+
 ## Recommended Next Direction
 
-- Possible next decision: Architect/Operator review whether Bundle 50 should verify backend/control-plane support for `agent_creator` as an active-agent switch target, or require further architecture before activation.
-- Do not imply Bundle 50 activation is approved.
+- Possible next decision: Architect/Operator review whether Bundle 51 should define an Agent Creator control-plane registration contract, no activation.
+- Do not imply Bundle 51 activation is approved.
 - Preserve current boundary behavior and public sanitized docs-only/non-canonical posture until a newly accepted bundle decision says otherwise.
 
 ## Open Gates
