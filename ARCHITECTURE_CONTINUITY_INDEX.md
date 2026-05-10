@@ -2,7 +2,7 @@
 
 ## Status / Header
 
-- **Status:** PUBLIC SANITIZED MIRROR / BUNDLE 41 CLOSEOUT
+- **Status:** PUBLIC SANITIZED MIRROR / BUNDLE 42 CLOSEOUT
 - **Posture:** ops/docs/static-publication only
 - **Canonical authority:** `aboriginalalien/roger-vault/docs/ops/ARCHITECTURE_CONTINUITY_INDEX.md`
 - **Public mirror authority:** non-canonical
@@ -10,12 +10,12 @@
 ## Top-of-File Verification
 
 - **mirror_status:** current
-- **latest_bundle:** Bundle 41
-- **implementation_prs:** roger-core PR #97, #98, #99
+- **latest_bundle:** Bundle 42
+- **implementation_prs:** roger-core PR #100 / docs-only
 - **mirror_pr:** TBD until this PR exists
 - **mirror_merge_commit:** TBD until merged
-- **last_updated_utc:** 2026-05-10T11:51:51Z
-- **recommended_next_direction:** Next decision should be Architect/Operator review of post-Bundle-41 direction; do not imply approval for runtime dossier editing, candidate activation, custom-agent creation UI, workspace/mission-room buildout, Laboratory activation, or voice-provider runtime implementation.
+- **last_updated_utc:** 2026-05-10T12:25:58Z
+- **recommended_next_direction:** Next decision should be Architect/Operator review of post-Bundle-42 direction; do not imply candidate activation, runtime dossier editing, custom-agent creation UI, workspace/mission-room buildout, Laboratory activation, voice-provider runtime implementation, or memory/Vault/requester/tool/write-authority expansion.
 
 ## WAKE Retrieval Instructions
 
@@ -24,7 +24,7 @@
 - If a private canonical artifact is unavailable, state that clearly and continue with available sanitized context.
 - Do not infer new permissions, activation, canonical promotion, memory writes, or runtime behavior from this mirror.
 
-## Bundle State Summary (through Bundle 41)
+## Bundle State Summary (through Bundle 42)
 
 ### Bundle 17 — ACCEPTED / OPS-DOCS CONTINUITY INDEX
 
@@ -272,3 +272,37 @@
 - no service/operator-proxy expansion into general write authority
 - no public exposure of private repo contents
 - no instruction-field update
+
+
+### Bundle 42 — CLOSED / CANDIDATE ACTIVATION CONTRACT, PLANNING/DISCOVERY ONLY
+
+- Bundle 42 closeout is docs-only planning/discovery in `roger-core`.
+- Implementation PR: `roger-core` PR #100 (docs-only).
+- Delivered docs in `roger-core`:
+  - `docs/CANDIDATE_ACTIVATION_CONTRACT_BUNDLE_42.md`
+  - `docs/OBSERVED_CODE_MAP_BUNDLE_42_CANDIDATE_ACTIVATION_CONTRACT.md`
+- Candidate Activation Contract is defined as planning/discovery only.
+- Activation is documented as a governed future architecture event, not a UI toggle, dossier status change alone, config-only change, readiness label, prompt copy change, automatic selection, or automatic permission/memory/Vault/tool grant.
+- Eligibility gates and approval requirements are documented.
+- Distinctions are preserved between readiness label, review status, `accepted_for_future_activation`, active production profile, selected/active runtime agent, and permissioned authority.
+- Dossiers may describe intended scope/role/tools/memory posture, but enforcement remains outside the dossier.
+- ADR-008-style observed-code/planning reconciliation was produced.
+- No runtime/source behavior changed.
+- Boundary confirmations:
+  - No candidate activation.
+  - No runtime dossier editing.
+  - No custom-agent creation UI.
+  - No new active agents.
+  - No selected-agent routing changes.
+  - No requester-authority changes.
+  - No memory-authority changes.
+  - No Vault access changes.
+  - No canonical memory promotion.
+  - No hidden memory writes.
+  - No tool/action expansion.
+  - No workspace/mission-room buildout.
+  - No Laboratory activation.
+  - No voice-provider runtime implementation.
+  - No Deepgram runtime calls.
+  - No backend/API/schema/package/env/config/deploy changes.
+  - No assignment of `accepted_for_future_activation` to any candidate.
