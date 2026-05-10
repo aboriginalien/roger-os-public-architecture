@@ -2,7 +2,7 @@
 
 ## Status / Header
 
-- **Status:** PUBLIC SANITIZED MIRROR / BUNDLE 47 CLOSEOUT
+- **Status:** PUBLIC SANITIZED MIRROR / BUNDLE 48 CLOSEOUT
 - **Posture:** ops/docs/static-publication only
 - **Canonical authority:** `aboriginalalien/roger-vault/docs/ops/ARCHITECTURE_CONTINUITY_INDEX.md`
 - **Public mirror authority:** non-canonical
@@ -10,12 +10,12 @@
 ## Top-of-File Verification
 
 - **mirror_status:** current
-- **latest_bundle:** Bundle 47
-- **implementation_prs:** roger-core PR #106
+- **latest_bundle:** Bundle 48
+- **implementation_prs:** roger-core PR #107 / docs-only
 - **mirror_pr:** TBD until this PR exists
 - **mirror_merge_commit:** TBD until merged
-- **last_updated_utc:** 2026-05-10T16:00:00Z
-- **recommended_next_direction:** Next decision should be Architect/Operator review of post-Bundle-47 direction; do not infer approval for activation, runtime dossier editing, custom-agent creation UI, workspace/mission-room buildout, Laboratory activation, voice-provider runtime implementation, or memory/Vault/requester/tool authority expansion.
+- **last_updated_utc:** 2026-05-10T19:19:37Z
+- **recommended_next_direction:** Next decision should be Architect/Operator review of post-Bundle-48 direction; do not imply approval for activation, runtime dossier editing, custom-agent UI, workspace/mission-room implementation, Laboratory activation, voice-provider runtime implementation, or memory/Vault/requester/tool authority expansion.
 
 ## WAKE Retrieval Instructions
 
@@ -24,7 +24,7 @@
 - If a private canonical artifact is unavailable, state that clearly and continue with available sanitized context.
 - Do not infer new permissions, activation, canonical promotion, memory writes, or runtime behavior from this mirror.
 
-## Bundle State Summary (through Bundle 47)
+## Bundle State Summary (through Bundle 48)
 
 ### Bundle 17 — ACCEPTED / OPS-DOCS CONTINUITY INDEX
 
@@ -293,6 +293,24 @@
 - No voice-provider runtime implementation.
 - No memory/Vault/requester/tool authority expansion.
 
+### Bundle 48 — CLOSED / AGENT CREATOR ACTIVATION PLANNING CONTRACT + FUTURE AGENT CREATION WORKSPACE BRIEF, NO ACTIVATION
+
+- implementation_prs: roger-core PR #107 / docs-only.
+- Agent Creator activation planning contract completed.
+- Future Agent Creation Workspace brief completed as planning only.
+- Agent Creator may eventually help draft and organize proposed agents, but must not activate agents or grant authority.
+- Future Agent Creation Workspace remains future architecture only.
+- No Agent Creator activation.
+- No selected-agent routing changes.
+- No runtime dossier editing.
+- No custom-agent creation UI.
+- No workspace/mission-room implementation.
+- No Laboratory activation.
+- No voice-provider runtime implementation.
+- No memory/Vault/requester/tool authority expansion.
+- No backend/API/schema/package/env/config/deploy changes.
+- No private/raw Agent Creator source text copied.
+
 ## Recommended Next Direction
 
 - Post-Bundle-41 direction requires explicit Architect/Operator review before selecting any next implementation bundle.
@@ -399,4 +417,3 @@
 - No memory/Vault/requester/tool authority expansion.
 - Provenance posture: Bundle 44 used accepted Bundle 43 public-safe source intake/adaptation material; Bundle 43 used Operator-provided Agent Creator source export/context, not direct raw Agent Creator attachment ingestion by Codex.
 - Direct raw-source review remains a provenance gap before any readiness upgrade.
-
