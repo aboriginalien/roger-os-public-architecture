@@ -2,7 +2,7 @@
 
 ## Status / Header
 
-- **Status:** PUBLIC SANITIZED MIRROR / BUNDLE 42 CLOSEOUT
+- **Status:** PUBLIC SANITIZED MIRROR / BUNDLE 43 CLOSEOUT
 - **Posture:** ops/docs/static-publication only
 - **Canonical authority:** `aboriginalalien/roger-vault/docs/ops/ARCHITECTURE_CONTINUITY_INDEX.md`
 - **Public mirror authority:** non-canonical
@@ -10,12 +10,12 @@
 ## Top-of-File Verification
 
 - **mirror_status:** current
-- **latest_bundle:** Bundle 42
-- **implementation_prs:** roger-core PR #100 / docs-only
+- **latest_bundle:** Bundle 43
+- **implementation_prs:** roger-core PR #101, #102 / docs-planning only
 - **mirror_pr:** TBD until this PR exists
 - **mirror_merge_commit:** TBD until merged
-- **last_updated_utc:** 2026-05-10T12:25:58Z
-- **recommended_next_direction:** Next decision should be Architect/Operator review of post-Bundle-42 direction; do not imply candidate activation, runtime dossier editing, custom-agent creation UI, workspace/mission-room buildout, Laboratory activation, voice-provider runtime implementation, or memory/Vault/requester/tool/write-authority expansion.
+- **last_updated_utc:** 2026-05-10T14:02:30Z
+- **recommended_next_direction:** Possible next decision: Architect/Operator review whether to draft Bundle 44 — Agent Creator Static Candidate Dossier, No Activation.
 
 ## WAKE Retrieval Instructions
 
@@ -24,7 +24,7 @@
 - If a private canonical artifact is unavailable, state that clearly and continue with available sanitized context.
 - Do not infer new permissions, activation, canonical promotion, memory writes, or runtime behavior from this mirror.
 
-## Bundle State Summary (through Bundle 42)
+## Bundle State Summary (through Bundle 43)
 
 ### Bundle 17 — ACCEPTED / OPS-DOCS CONTINUITY INDEX
 
@@ -306,3 +306,19 @@
   - No Deepgram runtime calls.
   - No backend/API/schema/package/env/config/deploy changes.
   - No assignment of `accepted_for_future_activation` to any candidate.
+
+
+### Bundle 43 — CLOSED / AGENT CREATOR SOURCE INTAKE + ADAPTATION MAP, NO ACTIVATION
+
+- Agent Creator source intake/adaptation map completed.
+- Corrective docs-only boundary/provenance patch applied.
+- Agent Creator remains source material only.
+- No Agent Creator activation.
+- No formal Agent Creator candidate dossier.
+- No runtime dossier editing.
+- No custom-agent creation UI.
+- No workspace/mission-room buildout.
+- No Laboratory activation.
+- No voice-provider runtime implementation.
+- No memory/Vault/requester/tool authority expansion.
+- Codex used Operator-provided Agent Creator source export/context, not direct raw Agent Creator attachment ingestion.
