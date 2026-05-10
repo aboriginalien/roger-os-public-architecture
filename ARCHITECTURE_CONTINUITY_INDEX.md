@@ -2,7 +2,7 @@
 
 ## Status / Header
 
-- **Status:** PUBLIC SANITIZED MIRROR / BUNDLE 40 CLOSEOUT
+- **Status:** PUBLIC SANITIZED MIRROR / BUNDLE 41 CLOSEOUT
 - **Posture:** ops/docs/static-publication only
 - **Canonical authority:** `aboriginalalien/roger-vault/docs/ops/ARCHITECTURE_CONTINUITY_INDEX.md`
 - **Public mirror authority:** non-canonical
@@ -10,12 +10,12 @@
 ## Top-of-File Verification
 
 - **mirror_status:** current
-- **latest_bundle:** Bundle 40
-- **implementation_prs:** roger-core PR #96
+- **latest_bundle:** Bundle 41
+- **implementation_prs:** roger-core PR #97, #98, #99
 - **mirror_pr:** TBD until this PR exists
 - **mirror_merge_commit:** TBD until merged
-- **last_updated_utc:** 2026-05-10T03:10:55Z
-- **recommended_next_direction:** Next decision should be Architect/Operator review of post-Bundle-40 direction; do not imply runtime dossier editing, candidate activation, custom-agent creation UI, workspace/mission-room buildout, Laboratory activation, or voice-provider runtime implementation.
+- **last_updated_utc:** 2026-05-10T11:51:51Z
+- **recommended_next_direction:** Next decision should be Architect/Operator review of post-Bundle-41 direction; do not imply approval for runtime dossier editing, candidate activation, custom-agent creation UI, workspace/mission-room buildout, Laboratory activation, or voice-provider runtime implementation.
 
 ## WAKE Retrieval Instructions
 
@@ -24,7 +24,7 @@
 - If a private canonical artifact is unavailable, state that clearly and continue with available sanitized context.
 - Do not infer new permissions, activation, canonical promotion, memory writes, or runtime behavior from this mirror.
 
-## Bundle State Summary (through Bundle 40)
+## Bundle State Summary (through Bundle 41)
 
 ### Bundle 17 — ACCEPTED / OPS-DOCS CONTINUITY INDEX
 
@@ -207,10 +207,41 @@
 - No backend/API/schema/package/env/config/deploy changes.
 - No workspace/mission-room, Laboratory, or voice-provider runtime implementation.
 
+### Bundle 41 — CLOSED / AGENT DOSSIER CANDIDATE READINESS WORKSTREAM, NO ACTIVATION
+
+- Bundle 41 implemented candidate readiness metadata/workstream posture in `roger-core`.
+- Implementation PRs: `roger-core` PR #97, #98, #99.
+- Candidate readiness metadata remains static/config-backed.
+- `/agents` shows public-safe candidate readiness metadata.
+- Candidate remains inactive and not selectable.
+- Chief of Staff remains the only active/default selected user-facing agent.
+- `chief_of_staff` slug remains preserved.
+- Roger Intercom remains shell/interface/capture/navigation, not an agent.
+- Selected-agent routing and `/capture` behavior remain preserved.
+- `accepted_for_future_activation` exists only as a type/documented future governed outcome and was not assigned to any candidate.
+- ADR-008 observed-code reconciliation was produced.
+- Boundary confirmations:
+  - No runtime dossier editing.
+  - No candidate activation.
+  - No custom-agent creation UI.
+  - No new active agents.
+  - No selected-agent routing change.
+  - No requester-authority change.
+  - No memory-authority change.
+  - No Vault access change.
+  - No canonical memory promotion behavior.
+  - No hidden memory writes.
+  - No tool/action expansion.
+  - No workspace/mission-room buildout.
+  - No Laboratory activation.
+  - No voice-provider runtime implementation.
+  - No Deepgram runtime calls.
+  - No backend/API/schema/package/env/config/deploy changes.
+
 ## Recommended Next Direction
 
-- Post-Bundle-40 direction requires explicit Architect/Operator review before selecting any next implementation bundle.
-- Do not imply runtime dossier editing, candidate activation, custom-agent creation UI, workspace/mission-room buildout, Laboratory activation, or voice-provider runtime implementation without a newly accepted bundle decision.
+- Post-Bundle-41 direction requires explicit Architect/Operator review before selecting any next implementation bundle.
+- Do not imply approval for runtime dossier editing, candidate activation, custom-agent creation UI, workspace/mission-room buildout, Laboratory activation, or voice-provider runtime implementation without a newly accepted bundle decision.
 - Preserve current boundary behavior and public sanitized docs-only/non-canonical posture until that decision is made.
 
 ## Open Gates
