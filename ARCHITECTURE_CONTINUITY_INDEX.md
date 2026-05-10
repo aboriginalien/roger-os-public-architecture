@@ -2,7 +2,7 @@
 
 ## Status / Header
 
-- **Status:** PUBLIC SANITIZED MIRROR / BUNDLE 37 CLOSEOUT
+- **Status:** PUBLIC SANITIZED MIRROR / BUNDLE 38 CLOSEOUT
 - **Posture:** ops/docs/static-publication only
 - **Canonical authority:** `aboriginalalien/roger-vault/docs/ops/ARCHITECTURE_CONTINUITY_INDEX.md`
 - **Public mirror authority:** non-canonical
@@ -10,12 +10,12 @@
 ## Top-of-File Verification
 
 - **mirror_status:** current
-- **latest_bundle:** Bundle 37
-- **implementation_prs:** roger-core PR #93 / docs-only
+- **latest_bundle:** Bundle 38
+- **implementation_prs:** roger-core PR #94
 - **mirror_pr:** TBD until this PR exists
 - **mirror_merge_commit:** TBD until merged
-- **last_updated_utc:** 2026-05-10T01:47:48Z
-- **recommended_next_direction:** Next decision: choose whether Bundle 38 should implement Aura-1 TTS first, Flux STT/post-record replacement first, a smaller provider-config foundation, or pivot to Agent Dossier MVP before voice runtime implementation.
+- **last_updated_utc:** 2026-05-10T02:16:56Z
+- **recommended_next_direction:** Next decision should be Architect/Operator review of post-Bundle-38 direction; do not imply full custom-agent activation, runtime dossier editing, workspace/mission-room buildout, voice-provider runtime implementation, or Laboratory activation.
 
 ## WAKE Retrieval Instructions
 
@@ -24,7 +24,7 @@
 - If a private canonical artifact is unavailable, state that clearly and continue with available sanitized context.
 - Do not infer new permissions, activation, canonical promotion, memory writes, or runtime behavior from this mirror.
 
-## Bundle State Summary (through Bundle 37)
+## Bundle State Summary (through Bundle 38)
 
 ### Bundle 17 — ACCEPTED / OPS-DOCS CONTINUITY INDEX
 
@@ -147,13 +147,33 @@
   - No selected-agent routing redesign added.
 - Architect caveat: Architect could not independently fetch the raw GitHub doc paths during review; preserve exact doc paths for later verification. This is not a closeout blocker.
 
+
+
+### Bundle 38 — CLOSED / V1 AGENT DOSSIER MVP
+
+- Static/config-backed Agent Dossier MVP created in `roger-core`.
+- Chief of Staff mapped into seven-layer dossier structure.
+- Chief of Staff remains slug `chief_of_staff` and default selected user-facing agent.
+- Roger Intercom remains shell/capture/navigation, not an agent and not dossiered as an agent.
+- Candidate dossier/example remains inactive and not selectable.
+- Dossiers describe intended profile/scope only; they do not grant permissions.
+- No Vault access expansion.
+- No canonical memory promotion behavior.
+- No hidden memory writes.
+- No requester-authority activation.
+- No tool/action expansion.
+- No runtime dossier editor.
+- No full custom-agent UI.
+- No Laboratory activation.
+- No workspace/mission-room buildout.
+- No voice-provider runtime implementation.
+- `/capture` smoke after deploy remained good: selected agent visible, Start Recording -> Stop & Send works, response renders, Speak Reply / Stop Speak work, no visible Intercom-as-agent regression.
+
 ## Recommended Next Direction
 
-### Bundle 38 Decision Gate — Voice Provider Sequencing vs Agent Dossier MVP
-
-- Choose the next scoped direction explicitly; do not treat voice runtime implementation as pre-approved.
-- Candidate paths: Aura-1 TTS-first implementation, Flux STT/post-record replacement-first implementation, a smaller `VoiceProviderConfig` foundation slice, or a pivot to Agent Dossier MVP before voice runtime changes.
-- Preserve current boundary behavior and docs-only/non-canonical posture until an Architect-approved implementation bundle is selected.
+- Post-Bundle-38 direction requires explicit Architect/Operator review before selecting any next implementation bundle.
+- Do not imply full custom-agent activation, runtime dossier editing, workspace/mission-room buildout, voice-provider runtime implementation, or Laboratory activation without a newly accepted bundle decision.
+- Preserve current boundary behavior and public sanitized docs-only/non-canonical posture until that decision is made.
 
 ## Open Gates
 
