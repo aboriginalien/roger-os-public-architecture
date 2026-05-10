@@ -2,7 +2,7 @@
 
 ## Status / Header
 
-- **Status:** PUBLIC SANITIZED MIRROR / BUNDLE 36 CLOSEOUT
+- **Status:** PUBLIC SANITIZED MIRROR / BUNDLE 37 CLOSEOUT
 - **Posture:** ops/docs/static-publication only
 - **Canonical authority:** `aboriginalalien/roger-vault/docs/ops/ARCHITECTURE_CONTINUITY_INDEX.md`
 - **Public mirror authority:** non-canonical
@@ -10,11 +10,12 @@
 ## Top-of-File Verification
 
 - **mirror_status:** current
-- **latest_bundle:** Bundle 36
-- **implementation_prs:** roger-core PR #91, roger-core PR #92
+- **latest_bundle:** Bundle 37
+- **implementation_prs:** roger-core PR #93 / docs-only
 - **mirror_pr:** TBD until this PR exists
 - **mirror_merge_commit:** TBD until merged
-- **last_updated_utc:** 2026-05-10T00:02:05Z
+- **last_updated_utc:** 2026-05-10T01:47:48Z
+- **recommended_next_direction:** Next decision: choose whether Bundle 38 should implement Aura-1 TTS first, Flux STT/post-record replacement first, a smaller provider-config foundation, or pivot to Agent Dossier MVP before voice runtime implementation.
 
 ## WAKE Retrieval Instructions
 
@@ -23,7 +24,7 @@
 - If a private canonical artifact is unavailable, state that clearly and continue with available sanitized context.
 - Do not infer new permissions, activation, canonical promotion, memory writes, or runtime behavior from this mirror.
 
-## Bundle State Summary (through Bundle 36)
+## Bundle State Summary (through Bundle 37)
 
 ### Bundle 17 — ACCEPTED / OPS-DOCS CONTINUITY INDEX
 
@@ -115,12 +116,44 @@
 - No backend/API/schema/Vault/package/env/config/deploy/requester-authority/memory-authority/agent-identity/audio-pipeline expansion observed.
 - Observed watch item: after a fresh deploy/browser refresh, the first response may not auto-speak until Speak Reply is tapped; subsequent responses auto-speak normally. This is non-blocking and tracked as a watch item only.
 
+
+
+### Bundle 37 — CLOSED / V1 VOICE PROVIDER LAYER PLANNING
+
+- Bundle 37 was docs-only planning/discovery.
+- Delivered docs in `roger-core`:
+  - `docs/VOICE_PROVIDER_LAYER_BUNDLE_37_PLAN.md`
+  - `docs/OBSERVED_CODE_MAP_BUNDLE_37_VOICE_PROVIDER_PLANNING.md`
+- Current `/capture` remains browser `MediaRecorder` capture.
+- Current loop remains Start Recording -> Stop & Send.
+- Current STT remains post-recording through existing server-side OpenAI transcription path.
+- Selected-agent routing begins after transcription.
+- Current TTS remains browser/client `speechSynthesis` with Speak Reply / Stop Speak and auto-speak behavior.
+- Browser-native verbal command support remains opportunistic only.
+- Roger Intercom remains shell/capture/navigation surface.
+- Chief of Staff or selected agent remains responder.
+- Proposed future adapter posture includes `VoiceProviderConfig`, STT adapter boundary, TTS adapter boundary, server-side secret handling, provider/model/voice swapping later.
+- Default candidates documented:
+  - STT: Deepgram Flux
+  - TTS: Deepgram Aura-1
+- Boundary confirmations:
+  - No runtime Deepgram calls added.
+  - No provider keys added.
+  - No package/env/config changes added.
+  - No backend/API/schema/Vault/requester-authority/memory-authority/agent-identity changes added.
+  - No new audio pipeline added.
+  - No always-listening or hidden recording behavior added.
+  - No Intercom-as-agent behavior added.
+  - No selected-agent routing redesign added.
+- Architect caveat: Architect could not independently fetch the raw GitHub doc paths during review; preserve exact doc paths for later verification. This is not a closeout blocker.
+
 ## Recommended Next Direction
 
-### Bundle 36 — Identity Boundary Alignment: Preserve Boundary-Correct Shell/Agent Separation
+### Bundle 38 Decision Gate — Voice Provider Sequencing vs Agent Dossier MVP
 
-- Preserve boundary-correct identity behavior: Roger Intercom as shell/interface and Chief of Staff as selected/default user-facing responder.
-- Preserve the dependable manual capture loop and selected-agent routing while tracking first-run post-refresh auto-speak inconsistency as non-blocking.
+- Choose the next scoped direction explicitly; do not treat voice runtime implementation as pre-approved.
+- Candidate paths: Aura-1 TTS-first implementation, Flux STT/post-record replacement-first implementation, a smaller `VoiceProviderConfig` foundation slice, or a pivot to Agent Dossier MVP before voice runtime changes.
+- Preserve current boundary behavior and docs-only/non-canonical posture until an Architect-approved implementation bundle is selected.
 
 ## Open Gates
 
