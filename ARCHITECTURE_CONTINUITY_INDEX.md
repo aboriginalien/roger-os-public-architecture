@@ -2,7 +2,7 @@
 
 ## Status / Header
 
-- **Status:** PUBLIC SANITIZED MIRROR / BUNDLE 43 CLOSEOUT
+- **Status:** PUBLIC SANITIZED MIRROR / BUNDLE 44 CLOSEOUT
 - **Posture:** ops/docs/static-publication only
 - **Canonical authority:** `aboriginalalien/roger-vault/docs/ops/ARCHITECTURE_CONTINUITY_INDEX.md`
 - **Public mirror authority:** non-canonical
@@ -10,12 +10,12 @@
 ## Top-of-File Verification
 
 - **mirror_status:** current
-- **latest_bundle:** Bundle 43
-- **implementation_prs:** roger-core PR #101, #102 / docs-planning only
+- **latest_bundle:** Bundle 44
+- **implementation_prs:** roger-core PR #103
 - **mirror_pr:** TBD until this PR exists
 - **mirror_merge_commit:** TBD until merged
-- **last_updated_utc:** 2026-05-10T14:02:30Z
-- **recommended_next_direction:** Possible next decision: Architect/Operator review whether to draft Bundle 44 — Agent Creator Static Candidate Dossier, No Activation.
+- **last_updated_utc:** 2026-05-10T14:32:29Z
+- **recommended_next_direction:** Next decision should be Architect/Operator review of post-Bundle-44 direction; do not infer approval for Agent Creator activation, runtime dossier editing, custom-agent creation UI, workspace/mission-room buildout, Laboratory activation, voice-provider runtime implementation, or memory/Vault/requester/tool authority expansion.
 
 ## WAKE Retrieval Instructions
 
@@ -24,7 +24,7 @@
 - If a private canonical artifact is unavailable, state that clearly and continue with available sanitized context.
 - Do not infer new permissions, activation, canonical promotion, memory writes, or runtime behavior from this mirror.
 
-## Bundle State Summary (through Bundle 43)
+## Bundle State Summary (through Bundle 44)
 
 ### Bundle 17 — ACCEPTED / OPS-DOCS CONTINUITY INDEX
 
@@ -322,3 +322,26 @@
 - No voice-provider runtime implementation.
 - No memory/Vault/requester/tool authority expansion.
 - Codex used Operator-provided Agent Creator source export/context, not direct raw Agent Creator attachment ingestion.
+
+### Bundle 44 — CLOSED / AGENT CREATOR STATIC CANDIDATE DOSSIER, NO ACTIVATION
+
+- Agent Creator static candidate dossier added in `roger-core`.
+- implementation_prs: roger-core PR #103.
+- candidate slug: `agent_creator`.
+- candidate status: inactive / not selectable.
+- review state: proposed.
+- readiness label: needs_source_refs.
+- `accepted_for_future_activation` was not assigned.
+- Agent Creator remains candidate/source-derived review material only.
+- Chief of Staff remains the only active/default selected user-facing agent.
+- No Agent Creator activation.
+- No selected-agent routing changes.
+- No runtime dossier editing.
+- No custom-agent creation UI.
+- No workspace/mission-room buildout.
+- No Laboratory activation.
+- No voice-provider runtime implementation.
+- No memory/Vault/requester/tool authority expansion.
+- Provenance posture: Bundle 44 used accepted Bundle 43 public-safe source intake/adaptation material; Bundle 43 used Operator-provided Agent Creator source export/context, not direct raw Agent Creator attachment ingestion by Codex.
+- Direct raw-source review remains a provenance gap before any readiness upgrade.
+
