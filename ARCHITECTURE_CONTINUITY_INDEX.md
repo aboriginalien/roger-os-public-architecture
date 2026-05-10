@@ -2,7 +2,7 @@
 
 ## Status / Header
 
-- **Status:** PUBLIC SANITIZED MIRROR / BUNDLE 45 CLOSEOUT
+- **Status:** PUBLIC SANITIZED MIRROR / BUNDLE 46 CLOSEOUT
 - **Posture:** ops/docs/static-publication only
 - **Canonical authority:** `aboriginalalien/roger-vault/docs/ops/ARCHITECTURE_CONTINUITY_INDEX.md`
 - **Public mirror authority:** non-canonical
@@ -10,12 +10,12 @@
 ## Top-of-File Verification
 
 - **mirror_status:** current
-- **latest_bundle:** Bundle 45
-- **implementation_prs:** roger-core PR #104 / docs-only
+- **latest_bundle:** Bundle 46
+- **implementation_prs:** roger-core PR #105
 - **mirror_pr:** TBD until this PR exists
 - **mirror_merge_commit:** TBD until merged
-- **last_updated_utc:** 2026-05-10T15:00:00Z
-- **recommended_next_direction:** Next decision should be Architect/Operator review of post-Bundle-44 direction; do not infer approval for Agent Creator activation, runtime dossier editing, custom-agent creation UI, workspace/mission-room buildout, Laboratory activation, voice-provider runtime implementation, or memory/Vault/requester/tool authority expansion.
+- **last_updated_utc:** 2026-05-10T16:00:00Z
+- **recommended_next_direction:** Next decision should be Architect/Operator review of post-Bundle-46 direction; do not infer approval for activation, accepted_for_future_activation, runtime dossier editing, custom-agent creation UI, workspace/mission-room buildout, Laboratory activation, voice-provider runtime implementation, or memory/Vault/requester/tool authority expansion.
 
 ## WAKE Retrieval Instructions
 
@@ -24,7 +24,7 @@
 - If a private canonical artifact is unavailable, state that clearly and continue with available sanitized context.
 - Do not infer new permissions, activation, canonical promotion, memory writes, or runtime behavior from this mirror.
 
-## Bundle State Summary (through Bundle 45)
+## Bundle State Summary (through Bundle 46)
 
 ### Bundle 17 — ACCEPTED / OPS-DOCS CONTINUITY INDEX
 
@@ -258,6 +258,24 @@
 - No memory/Vault/requester/tool authority expansion.
 - Bundle 45 improved provenance confidence but did not change runtime/config state.
 - Readiness upgrade remains a separate future Architect-governed decision.
+
+
+### Bundle 46 — CLOSED / AGENT CREATOR READINESS LABEL UPDATE, NO ACTIVATION
+
+- Agent Creator readinessLabel updated to `ready_for_architect_review`.
+- Implementation PR: roger-core PR #105.
+- reviewState remains `proposed`.
+- `accepted_for_future_activation` remains not assigned.
+- Agent Creator remains candidate / inactive / not selectable.
+- Chief of Staff remains the only active/default selected user-facing agent.
+- No Agent Creator activation.
+- No runtime dossier editing.
+- No custom-agent creation UI.
+- No selected-agent routing changes.
+- No workspace/mission-room buildout.
+- No Laboratory activation.
+- No voice-provider runtime implementation.
+- No memory/Vault/requester/tool authority expansion.
 
 ## Recommended Next Direction
 
