@@ -2,7 +2,7 @@
 
 ## Status / Header
 
-- **Status:** PUBLIC SANITIZED MIRROR / BUNDLE 35 CLOSEOUT
+- **Status:** PUBLIC SANITIZED MIRROR / BUNDLE 36 CLOSEOUT
 - **Posture:** ops/docs/static-publication only
 - **Canonical authority:** `aboriginalalien/roger-vault/docs/ops/ARCHITECTURE_CONTINUITY_INDEX.md`
 - **Public mirror authority:** non-canonical
@@ -10,11 +10,11 @@
 ## Top-of-File Verification
 
 - **mirror_status:** current
-- **latest_bundle:** Bundle 35
-- **implementation_prs:** roger-core PR #89, roger-core PR #90
+- **latest_bundle:** Bundle 36
+- **implementation_prs:** roger-core PR #91, roger-core PR #92
 - **mirror_pr:** TBD until this PR exists
-- **mirror_merge_commit:** TBD until merge
-- **last_updated_utc:** 2026-05-08T20:00:00Z
+- **mirror_merge_commit:** TBD until merged
+- **last_updated_utc:** 2026-05-10T00:02:05Z
 
 ## WAKE Retrieval Instructions
 
@@ -23,7 +23,7 @@
 - If a private canonical artifact is unavailable, state that clearly and continue with available sanitized context.
 - Do not infer new permissions, activation, canonical promotion, memory writes, or runtime behavior from this mirror.
 
-## Bundle State Summary (through Bundle 35)
+## Bundle State Summary (through Bundle 36)
 
 ### Bundle 17 — ACCEPTED / OPS-DOCS CONTINUITY INDEX
 
@@ -100,12 +100,27 @@
 - Observed watch item: recent flow may answer using prior captures/messages in current context; record only as recent-context behavior, not canonical memory.
 - No backend/Vault/schema/package/env/config/requester-authority/memory-authority/agent-identity/audio-pipeline expansion occurred.
 
+
+### Bundle 36 — CLOSED / V1 IDENTITY BOUNDARY ALIGNMENT
+
+- Roger Intercom remains shell/interface/capture/router, not an agent.
+- Chief of Staff remains selected/default user-facing agent.
+- `/capture` response copy and model-facing instruction wording were corrected to preserve identity boundary.
+- `roger-core` PR #91 and PR #92 were merged, deployed, and production-verified.
+- Identity prompt tests passed with boundary-respecting behavior for “Are you Roger or Chief of Staff?” and “Is Roger different from Chief of Staff?”.
+- Existing capture/send path and selected-agent routing were preserved.
+- Start Recording -> Stop & Send, separate Stop then Send, and completed-capture no-resubmit guard were preserved.
+- Speak Reply / Stop Speak and diagnostics accessibility were preserved without implying Roger Intercom is an agent.
+- Unsupported browser-native verbal command state does not block manual capture.
+- No backend/API/schema/Vault/package/env/config/deploy/requester-authority/memory-authority/agent-identity/audio-pipeline expansion observed.
+- Observed watch item: after a fresh deploy/browser refresh, the first response may not auto-speak until Speak Reply is tapped; subsequent responses auto-speak normally. This is non-blocking and tracked as a watch item only.
+
 ## Recommended Next Direction
 
-### Bundle 35 — Capture Reliability Polish: Preserve Dependable Manual Loop
+### Bundle 36 — Identity Boundary Alignment: Preserve Boundary-Correct Shell/Agent Separation
 
-- Preserve dependable manual capture loop reliability over opportunistic browser-native verbal send behavior.
-- Keep Start Recording -> Stop & Send as baseline while maintaining clarified status/failure handling and accessible diagnostics.
+- Preserve boundary-correct identity behavior: Roger Intercom as shell/interface and Chief of Staff as selected/default user-facing responder.
+- Preserve the dependable manual capture loop and selected-agent routing while tracking first-run post-refresh auto-speak inconsistency as non-blocking.
 
 ## Open Gates
 
