@@ -2,7 +2,7 @@
 
 ## Status / Header
 
-- **Status:** PUBLIC SANITIZED MIRROR / BUNDLE 38 CLOSEOUT
+- **Status:** PUBLIC SANITIZED MIRROR / BUNDLE 39 CLOSEOUT
 - **Posture:** ops/docs/static-publication only
 - **Canonical authority:** `aboriginalalien/roger-vault/docs/ops/ARCHITECTURE_CONTINUITY_INDEX.md`
 - **Public mirror authority:** non-canonical
@@ -10,12 +10,12 @@
 ## Top-of-File Verification
 
 - **mirror_status:** current
-- **latest_bundle:** Bundle 38
-- **implementation_prs:** roger-core PR #94
+- **latest_bundle:** Bundle 39
+- **implementation_prs:** roger-core PR #95
 - **mirror_pr:** TBD until this PR exists
 - **mirror_merge_commit:** TBD until merged
-- **last_updated_utc:** 2026-05-10T02:16:56Z
-- **recommended_next_direction:** Next decision should be Architect/Operator review of post-Bundle-38 direction; do not imply full custom-agent activation, runtime dossier editing, workspace/mission-room buildout, voice-provider runtime implementation, or Laboratory activation.
+- **last_updated_utc:** 2026-05-10T10:38:00Z
+- **recommended_next_direction:** Next decision should be Architect/Operator review of post-Bundle-39 direction; do not imply runtime dossier editing, candidate activation, custom-agent creation UI, workspace/mission-room buildout, Laboratory activation, or voice-provider runtime implementation.
 
 ## WAKE Retrieval Instructions
 
@@ -24,7 +24,7 @@
 - If a private canonical artifact is unavailable, state that clearly and continue with available sanitized context.
 - Do not infer new permissions, activation, canonical promotion, memory writes, or runtime behavior from this mirror.
 
-## Bundle State Summary (through Bundle 38)
+## Bundle State Summary (through Bundle 39)
 
 ### Bundle 17 — ACCEPTED / OPS-DOCS CONTINUITY INDEX
 
@@ -169,10 +169,30 @@
 - No voice-provider runtime implementation.
 - `/capture` smoke after deploy remained good: selected agent visible, Start Recording -> Stop & Send works, response renders, Speak Reply / Stop Speak work, no visible Intercom-as-agent regression.
 
+### Bundle 39 — CLOSED / AGENT DOSSIER READ SURFACE + CANDIDATE AGENT REVIEW FOUNDATION
+
+- Read-only `/agents` dossier review surface added in `roger-core`.
+- Chief of Staff remains the only active/default selected user-facing agent.
+- `chief_of_staff` slug preserved.
+- Candidate/example dossier remains inactive and not selectable.
+- Public-safe/redacted dossier fields only.
+- Dossiers describe intended profile/scope and do not grant permissions.
+- Roger Intercom remains shell/capture/navigation, not an agent.
+- Selected-agent routing and `/capture` behavior preserved.
+- Start Recording -> Stop & Send smoke-verified after deploy.
+- Selected-agent response rendering preserved.
+- Speak Reply / Stop Speak preserved.
+- No runtime dossier editing.
+- No candidate activation.
+- No new active agents.
+- No Vault/memory/requester/tool/write authority expansion.
+- No backend/API/schema/package/env/config/deploy changes.
+- No workspace/mission-room, Laboratory, or voice-provider runtime implementation.
+
 ## Recommended Next Direction
 
-- Post-Bundle-38 direction requires explicit Architect/Operator review before selecting any next implementation bundle.
-- Do not imply full custom-agent activation, runtime dossier editing, workspace/mission-room buildout, voice-provider runtime implementation, or Laboratory activation without a newly accepted bundle decision.
+- Post-Bundle-39 direction requires explicit Architect/Operator review before selecting any next implementation bundle.
+- Do not imply runtime dossier editing, candidate activation, custom-agent creation UI, workspace/mission-room buildout, Laboratory activation, or voice-provider runtime implementation without a newly accepted bundle decision.
 - Preserve current boundary behavior and public sanitized docs-only/non-canonical posture until that decision is made.
 
 ## Open Gates
