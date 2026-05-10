@@ -2,7 +2,7 @@
 
 ## Status / Header
 
-- **Status:** PUBLIC SANITIZED MIRROR / BUNDLE 39 CLOSEOUT
+- **Status:** PUBLIC SANITIZED MIRROR / BUNDLE 40 CLOSEOUT
 - **Posture:** ops/docs/static-publication only
 - **Canonical authority:** `aboriginalalien/roger-vault/docs/ops/ARCHITECTURE_CONTINUITY_INDEX.md`
 - **Public mirror authority:** non-canonical
@@ -10,12 +10,12 @@
 ## Top-of-File Verification
 
 - **mirror_status:** current
-- **latest_bundle:** Bundle 39
-- **implementation_prs:** roger-core PR #95
+- **latest_bundle:** Bundle 40
+- **implementation_prs:** roger-core PR #96
 - **mirror_pr:** TBD until this PR exists
 - **mirror_merge_commit:** TBD until merged
-- **last_updated_utc:** 2026-05-10T10:38:00Z
-- **recommended_next_direction:** Next decision should be Architect/Operator review of post-Bundle-39 direction; do not imply runtime dossier editing, candidate activation, custom-agent creation UI, workspace/mission-room buildout, Laboratory activation, or voice-provider runtime implementation.
+- **last_updated_utc:** 2026-05-10T03:10:55Z
+- **recommended_next_direction:** Next decision should be Architect/Operator review of post-Bundle-40 direction; do not imply runtime dossier editing, candidate activation, custom-agent creation UI, workspace/mission-room buildout, Laboratory activation, or voice-provider runtime implementation.
 
 ## WAKE Retrieval Instructions
 
@@ -24,7 +24,7 @@
 - If a private canonical artifact is unavailable, state that clearly and continue with available sanitized context.
 - Do not infer new permissions, activation, canonical promotion, memory writes, or runtime behavior from this mirror.
 
-## Bundle State Summary (through Bundle 39)
+## Bundle State Summary (through Bundle 40)
 
 ### Bundle 17 — ACCEPTED / OPS-DOCS CONTINUITY INDEX
 
@@ -189,9 +189,27 @@
 - No backend/API/schema/package/env/config/deploy changes.
 - No workspace/mission-room, Laboratory, or voice-provider runtime implementation.
 
+
+### Bundle 40 — CLOSED / CANDIDATE DOSSIER REVIEW MECHANICS, NO ACTIVATION
+
+- Candidate review states added as static/config-backed governance metadata.
+- `/agents` displays candidate review posture in read-only/public-safe form.
+- Candidate remains inactive and not selectable.
+- Review status does not grant runtime authority.
+- Chief of Staff remains active/default selected user-facing agent.
+- Roger Intercom remains shell/interface/capture/navigation, not an agent.
+- Selected-agent routing and `/capture` behavior preserved.
+- No edit/create/approve/reject/activate controls.
+- No runtime dossier editing.
+- No candidate activation.
+- No custom-agent creation UI.
+- No memory/Vault/requester/tool/write authority expansion.
+- No backend/API/schema/package/env/config/deploy changes.
+- No workspace/mission-room, Laboratory, or voice-provider runtime implementation.
+
 ## Recommended Next Direction
 
-- Post-Bundle-39 direction requires explicit Architect/Operator review before selecting any next implementation bundle.
+- Post-Bundle-40 direction requires explicit Architect/Operator review before selecting any next implementation bundle.
 - Do not imply runtime dossier editing, candidate activation, custom-agent creation UI, workspace/mission-room buildout, Laboratory activation, or voice-provider runtime implementation without a newly accepted bundle decision.
 - Preserve current boundary behavior and public sanitized docs-only/non-canonical posture until that decision is made.
 
