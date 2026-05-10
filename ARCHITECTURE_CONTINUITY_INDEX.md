@@ -2,7 +2,7 @@
 
 ## Status / Header
 
-- **Status:** PUBLIC SANITIZED MIRROR / BUNDLE 44 CLOSEOUT
+- **Status:** PUBLIC SANITIZED MIRROR / BUNDLE 45 CLOSEOUT
 - **Posture:** ops/docs/static-publication only
 - **Canonical authority:** `aboriginalalien/roger-vault/docs/ops/ARCHITECTURE_CONTINUITY_INDEX.md`
 - **Public mirror authority:** non-canonical
@@ -10,11 +10,11 @@
 ## Top-of-File Verification
 
 - **mirror_status:** current
-- **latest_bundle:** Bundle 44
-- **implementation_prs:** roger-core PR #103
+- **latest_bundle:** Bundle 45
+- **implementation_prs:** roger-core PR #104 / docs-only
 - **mirror_pr:** TBD until this PR exists
 - **mirror_merge_commit:** TBD until merged
-- **last_updated_utc:** 2026-05-10T14:32:29Z
+- **last_updated_utc:** 2026-05-10T15:00:00Z
 - **recommended_next_direction:** Next decision should be Architect/Operator review of post-Bundle-44 direction; do not infer approval for Agent Creator activation, runtime dossier editing, custom-agent creation UI, workspace/mission-room buildout, Laboratory activation, voice-provider runtime implementation, or memory/Vault/requester/tool authority expansion.
 
 ## WAKE Retrieval Instructions
@@ -24,7 +24,7 @@
 - If a private canonical artifact is unavailable, state that clearly and continue with available sanitized context.
 - Do not infer new permissions, activation, canonical promotion, memory writes, or runtime behavior from this mirror.
 
-## Bundle State Summary (through Bundle 44)
+## Bundle State Summary (through Bundle 45)
 
 ### Bundle 17 — ACCEPTED / OPS-DOCS CONTINUITY INDEX
 
@@ -237,6 +237,27 @@
   - No voice-provider runtime implementation.
   - No Deepgram runtime calls.
   - No backend/API/schema/package/env/config/deploy changes.
+
+
+### Bundle 45 — CLOSED / AGENT CREATOR SOURCE PROVENANCE REVIEW + READINESS UPGRADE ASSESSMENT, NO ACTIVATION
+
+- Agent Creator source provenance review completed.
+- Implementation PR: roger-core PR #104 / docs-only.
+- Private source pack was reviewed for provenance comparison only.
+- No raw/private source text was copied into public docs or public mirror.
+- Agent Creator remains candidate / inactive / not selectable.
+- readinessLabel remains needs_source_refs.
+- accepted_for_future_activation was not assigned.
+- No Agent Creator activation.
+- No runtime dossier editing.
+- No custom-agent creation UI.
+- No selected-agent routing changes.
+- No workspace/mission-room buildout.
+- No Laboratory activation.
+- No voice-provider runtime implementation.
+- No memory/Vault/requester/tool authority expansion.
+- Bundle 45 improved provenance confidence but did not change runtime/config state.
+- Readiness upgrade remains a separate future Architect-governed decision.
 
 ## Recommended Next Direction
 
