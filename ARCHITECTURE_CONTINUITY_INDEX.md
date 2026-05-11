@@ -2,7 +2,7 @@
 
 ## Status / Header
 
-- **Status:** PUBLIC SANITIZED MIRROR / BUNDLE 50 CLOSEOUT
+- **Status:** PUBLIC SANITIZED MIRROR / BUNDLE 51 CLOSEOUT
 - **Posture:** ops/docs/static-publication only
 - **Canonical authority:** `aboriginalalien/roger-vault/docs/ops/ARCHITECTURE_CONTINUITY_INDEX.md`
 - **Public mirror authority:** non-canonical
@@ -10,12 +10,12 @@
 ## Top-of-File Verification
 
 - **mirror_status:** current
-- **latest_bundle:** Bundle 50
-- **implementation_prs:** roger-core PR #109 / docs-only
+- **latest_bundle:** Bundle 51
+- **implementation_prs:** roger-core PR #110 / docs-only
 - **mirror_pr:** TBD until this PR exists
 - **mirror_merge_commit:** TBD until merged
-- **last_updated_utc:** 2026-05-10T20:25:00Z
-- **recommended_next_direction:** Possible next decision: Architect/Operator review whether Bundle 51 should define an Agent Creator control-plane registration contract, no activation.
+- **last_updated_utc:** 2026-05-11T00:00:00Z
+- **recommended_next_direction:** If pursued, a separate Architect-approved backend/Vault/control-plane architecture bundle is required before any Agent Creator registration path can be activation-eligible.
 
 ## WAKE Retrieval Instructions
 
@@ -258,6 +258,23 @@
 - No memory/Vault/requester/tool authority expansion.
 - Bundle 45 improved provenance confidence but did not change runtime/config state.
 - Readiness upgrade remains a separate future Architect-governed decision.
+
+### Bundle 51 — CLOSED / AGENT CREATOR CONTROL-PLANE REGISTRATION CONTRACT, NO ACTIVATION
+
+- Public mirror closeout for accepted docs-only implementation in `roger-core`.
+- Implementation PR: roger-core PR #110 / docs-only.
+- Bundle 51 completed the Agent Creator Control-Plane Registration Contract.
+- Bundle 51 completed an observed-code map for Agent Creator control-plane registration.
+- This mirror entry is sanitized, non-canonical, and navigation-only; it is not architecture expansion.
+- Agent Creator remains candidate / inactive / not selectable.
+- Agent Creator cannot become a valid runtime switch target merely from dossier readiness or `accepted_for_future_activation`.
+- Dossier readiness must not be treated as runtime activation.
+- Unknown or unsupported slugs must fail closed.
+- Registration must not be treated as authority.
+- Switchability must not be treated as Vault access.
+- Active selection must not be treated as memory-scope expansion.
+- No runtime proof, permission grant, canonical memory promotion, hidden write, or mutating endpoint authority is implied.
+- Activation remains blocked pending a separate Architect-approved backend/Vault/control-plane architecture bundle.
 
 
 ### Bundle 46 — CLOSED / AGENT CREATOR READINESS LABEL UPDATE, NO ACTIVATION
