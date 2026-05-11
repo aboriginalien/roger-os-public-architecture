@@ -2,7 +2,7 @@
 
 ## Status / Header
 
-- **Status:** PUBLIC SANITIZED MIRROR / BUNDLE 51 CLOSEOUT
+- **Status:** PUBLIC SANITIZED MIRROR / BUNDLE 52 CLOSEOUT
 - **Posture:** ops/docs/static-publication only
 - **Canonical authority:** `aboriginalalien/roger-vault/docs/ops/ARCHITECTURE_CONTINUITY_INDEX.md`
 - **Public mirror authority:** non-canonical
@@ -10,10 +10,10 @@
 ## Top-of-File Verification
 
 - **mirror_status:** current
-- **latest_bundle:** Bundle 51
-- **implementation_prs:** roger-core PR #110 / docs-only
+- **latest_bundle:** Bundle 52
+- **implementation_prs:** roger-core PR #111 / docs-only
 - **last_updated_utc:** 2026-05-11T00:00:00Z
-- **recommended_next_direction:** If pursued, a separate Architect-approved backend/Vault/control-plane architecture bundle is required before any Agent Creator registration path can be activation-eligible.
+- **recommended_next_direction:** Bundle 52 completed docs-only V1 custom-agent path selection and first practical readiness contract; any implementation work requires a separate Architect-approved Bundle 53 proposal.
 
 ## WAKE Retrieval Instructions
 
@@ -363,12 +363,41 @@
 - No runtime proof, permission grant, canonical memory promotion, hidden write, or mutating endpoint authority is implied.
 - Activation remains blocked pending a separate Architect-approved backend/Vault/control-plane architecture bundle.
 
+### Bundle 52 — CLOSED / V1 CUSTOM AGENT PATH SELECTION + FIRST PRACTICAL READINESS CONTRACT, NO ACTIVATION
+
+- Public mirror closeout for accepted docs-only implementation in `roger-core`.
+- Implementation PR: roger-core PR #111 / docs-only.
+- Bundle 52 is closed as docs/discovery/design-contract only, pending final public mirror verification.
+- Bundle 52 selected College Hunks Captain Assistant as the preferred first practical custom-agent readiness target.
+- This is readiness analysis only.
+- Bundle 52 did not activate College Hunks Captain Assistant.
+- Bundle 52 did not prove runtime support for College Hunks Captain Assistant.
+- Bundle 52 did not approve selected-agent routing changes.
+- Bundle 52 did not approve runtime registration.
+- Bundle 52 did not approve switch-target validity.
+- Bundle 52 did not approve Vault access, requester authority, tool authority, write-back authority, or permission expansion.
+- Bundle 52 did not activate Agent Creator.
+- Bundle 52 preserved Agent Creator’s Bundle 51 control-plane boundary.
+- Agent Creator remains candidate / inactive / not selectable.
+- Agent Creator activation remains blocked pending separate Architect-approved backend/Vault/control-plane architecture.
+- Bundle 52 defined a V1 context packet / write-back design sketch.
+- Bundle 52 documented stateless AI helpers as proposed internal harness/helper calls only, not agents.
+- Further implementation requires a separate Architect-approved Bundle 53.
+
 
 ## Recommended Next Direction
 
-- Bundle 51 has already completed the Agent Creator Control-Plane Registration Contract and observed-code-map closeout (docs-only, no activation).
-- Any next direction must be a separate Architect-approved backend/Vault/control-plane architecture bundle before any registration path or activation can proceed.
-- Agent Creator remains inactive, not selectable, and without runtime authority; preserve public sanitized, non-canonical, navigation-only posture and all existing no-activation boundaries.
+- Bundle 52 has completed the V1 custom-agent path selection and first practical readiness contract (docs/discovery/design-contract only, no activation).
+- Next work should be a separate Architect-approved Bundle 53 proposal.
+- Initial planning preference: begin with the earliest safe implementation seam for the College Hunks Captain Assistant path, not activation.
+- Likely staged direction may include (planning guidance only; not approved implementation):
+  - 53A current-state / observed-code confirmation, if needed.
+  - 53B College Hunks Captain Assistant dossier/source association, no activation.
+  - 53C context packet assembly for one selected custom agent using read-only inputs only.
+  - 53D Roger Intercom selected-agent capture path only if routing support is verified safe.
+  - 53E archive-only write-back / diagnostics, with no canonical memory promotion.
+  - 53F activation eligibility review only after registration, permissions, routing, and write-back boundaries are verified.
+- Preserve sanitized, non-canonical, navigation-only mirror posture and all existing no-activation boundaries unless separately Architect-approved.
 
 ## Open Gates
 
