@@ -12,8 +12,6 @@
 - **mirror_status:** current
 - **latest_bundle:** Bundle 51
 - **implementation_prs:** roger-core PR #110 / docs-only
-- **mirror_pr:** TBD until this PR exists
-- **mirror_merge_commit:** TBD until merged
 - **last_updated_utc:** 2026-05-11T00:00:00Z
 - **recommended_next_direction:** If pursued, a separate Architect-approved backend/Vault/control-plane architecture bundle is required before any Agent Creator registration path can be activation-eligible.
 
@@ -259,24 +257,6 @@
 - Bundle 45 improved provenance confidence but did not change runtime/config state.
 - Readiness upgrade remains a separate future Architect-governed decision.
 
-### Bundle 51 — CLOSED / AGENT CREATOR CONTROL-PLANE REGISTRATION CONTRACT, NO ACTIVATION
-
-- Public mirror closeout for accepted docs-only implementation in `roger-core`.
-- Implementation PR: roger-core PR #110 / docs-only.
-- Bundle 51 completed the Agent Creator Control-Plane Registration Contract.
-- Bundle 51 completed an observed-code map for Agent Creator control-plane registration.
-- This mirror entry is sanitized, non-canonical, and navigation-only; it is not architecture expansion.
-- Agent Creator remains candidate / inactive / not selectable.
-- Agent Creator cannot become a valid runtime switch target merely from dossier readiness or `accepted_for_future_activation`.
-- Dossier readiness must not be treated as runtime activation.
-- Unknown or unsupported slugs must fail closed.
-- Registration must not be treated as authority.
-- Switchability must not be treated as Vault access.
-- Active selection must not be treated as memory-scope expansion.
-- No runtime proof, permission grant, canonical memory promotion, hidden write, or mutating endpoint authority is implied.
-- Activation remains blocked pending a separate Architect-approved backend/Vault/control-plane architecture bundle.
-
-
 ### Bundle 46 — CLOSED / AGENT CREATOR READINESS LABEL UPDATE, NO ACTIVATION
 
 - Agent Creator readinessLabel updated to `ready_for_architect_review`.
@@ -365,11 +345,30 @@
 - No memory/Vault/requester/tool authority expansion.
 - No private/raw Agent Creator source text copied.
 
+
+### Bundle 51 — CLOSED / AGENT CREATOR CONTROL-PLANE REGISTRATION CONTRACT, NO ACTIVATION
+
+- Public mirror closeout for accepted docs-only implementation in `roger-core`.
+- Implementation PR: roger-core PR #110 / docs-only.
+- Bundle 51 completed the Agent Creator Control-Plane Registration Contract.
+- Bundle 51 completed an observed-code map for Agent Creator control-plane registration.
+- This mirror entry is sanitized, non-canonical, and navigation-only; it is not architecture expansion.
+- Agent Creator remains candidate / inactive / not selectable.
+- Agent Creator cannot become a valid runtime switch target merely from dossier readiness or `accepted_for_future_activation`.
+- Dossier readiness must not be treated as runtime activation.
+- Unknown or unsupported slugs must fail closed.
+- Registration must not be treated as authority.
+- Switchability must not be treated as Vault access.
+- Active selection must not be treated as memory-scope expansion.
+- No runtime proof, permission grant, canonical memory promotion, hidden write, or mutating endpoint authority is implied.
+- Activation remains blocked pending a separate Architect-approved backend/Vault/control-plane architecture bundle.
+
+
 ## Recommended Next Direction
 
-- Possible next decision: Architect/Operator review whether Bundle 51 should define an Agent Creator control-plane registration contract, no activation.
-- Do not imply Bundle 51 activation is approved.
-- Preserve current boundary behavior and public sanitized docs-only/non-canonical posture until a newly accepted bundle decision says otherwise.
+- Bundle 51 has already completed the Agent Creator Control-Plane Registration Contract and observed-code-map closeout (docs-only, no activation).
+- Any next direction must be a separate Architect-approved backend/Vault/control-plane architecture bundle before any registration path or activation can proceed.
+- Agent Creator remains inactive, not selectable, and without runtime authority; preserve public sanitized, non-canonical, navigation-only posture and all existing no-activation boundaries.
 
 ## Open Gates
 
