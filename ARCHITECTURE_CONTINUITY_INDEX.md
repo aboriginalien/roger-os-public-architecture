@@ -1,501 +1,99 @@
-# ARCHITECTURE_CONTINUITY_INDEX
-
-## Status / Header
-
-- **Status:** PUBLIC SANITIZED MIRROR / BUNDLE 52 CLOSEOUT
-- **Posture:** ops/docs/static-publication only
-- **Canonical authority:** `aboriginalalien/roger-vault/docs/ops/ARCHITECTURE_CONTINUITY_INDEX.md`
-- **Public mirror authority:** non-canonical
-
-## Top-of-File Verification
-
-- **mirror_status:** current
-- **latest_bundle:** Bundle 52
-- **implementation_prs:** roger-core PR #111 / docs-only
-- **last_updated_utc:** 2026-05-11T00:00:00Z
-- **recommended_next_direction:** Bundle 52 completed docs-only V1 custom-agent path selection and first practical readiness contract; any implementation work requires a separate Architect-approved Bundle 53 proposal.
-
-## WAKE Retrieval Instructions
-
-- Read this public mirror only as a continuity/navigation aid.
-- Treat private canonical docs and accepted Architect decisions as authoritative.
-- If a private canonical artifact is unavailable, state that clearly and continue with available sanitized context.
-- Do not infer new permissions, activation, canonical promotion, memory writes, or runtime behavior from this mirror.
-
-## Bundle State Summary (through Bundle 48)
-
-### Bundle 17 — ACCEPTED / OPS-DOCS CONTINUITY INDEX
-
-- Canonical index lives in `roger-vault`; `roger-core` has local pointer.
-- PRs: `aboriginalalien/roger-vault#46`, `aboriginalalien/roger-core#66`.
-
-### Bundle 18 — CLOSED / Durable Requester Context Runtime Foundation
-
-- Repo: `aboriginalalien/roger-core`
-- PR: `#68`
-- Server-side requester-context foundation only; no production activation.
-- Recorded limitation: process-local provenance is not sufficient for cross-process Core -> Vault trust.
-
-### Bundle 19 — CLOSED / ACCEPTED DESIGN-CONTRACT
-
-- Canonical contract lives in `roger-vault`; `roger-core` has local cross-reference pointer.
-- PRs: `aboriginalalien/roger-vault#48`, `aboriginalalien/roger-core#69`.
-- Preferred direction: asymmetric signing by Roger Core, verified by Roger Vault.
-- Vault service secret + JSON payload alone rejected for authority-bearing requester context.
-
-### Bundle 20 — CLOSED / PUBLIC RETRIEVAL URL PENDING
-
-- Finding: private repo raw/blob URLs were not publicly accessible unauthenticated.
-- Do not use the private repo raw/blob URLs in Architect instruction field.
-
-### Bundle 20.5 — CLOSED / PUBLIC SANITIZED MIRROR BOOTSTRAP
-
-- Purpose: establish public sanitized read-only mirror for Architect continuity retrieval.
-- This mirror remains non-canonical and retrieval-only.
-
-### Bundle 33 — CLOSED / ARCHITECTURAL SUCCESS WITH IMPLEMENTATION LIMITATION
-
-- Bundle 33 closed with implementation limitation.
-- Browser-native `SpeechRecognition` / `webkitSpeechRecognition` is opportunistic only.
-- It is not dependable V1 behavior.
-- Safari/iPad live verification returned `service-not-allowed`.
-- On tested Safari/iPad path, “Roger, send” and “Roger, stop” did not trigger stop/send.
-- Manual Stop/Send remains dependable V1 baseline.
-- Selected-agent response rendering remained live.
-- Speak Reply / Stop Speak remained available.
-- No backend/Vault/schema/package/env/config/requester-authority/memory/audio-pipeline expansion occurred.
-- Observed-code reconciliation artifact pointer (public-safe): `docs/adr/ADR-008-observed-code-reconciliation.md` (if present in canonical/private context).
-
-### Bundle 34 — CLOSED / V1 CAPTURE ERGONOMICS IMPROVEMENT
-
-- Bundle 34 closed as capture ergonomics improvement.
-- Bundle 33 remains closed with implementation limitation.
-- V1 dependable baseline is manual Start Recording -> Stop & Send.
-- Browser-native verbal send remains opportunistic only.
-- Bundle 34 added a large mobile-friendly Stop & Send primary action during active recording.
-- Stop & Send uses the existing capture/send path.
-- Separate Stop and Send controls remain available as fallback/manual controls.
-- Selected-agent response rendering remains live.
-- Speak Reply / Stop Speak remain available.
-- Safari/iPad unsupported verbal-command state does not block manual capture.
-- No backend/Vault/schema/package/env/config/requester-authority/memory-authority/agent-identity/audio-pipeline expansion occurred.
-
-
-### Bundle 35 — CLOSED / V1 CAPTURE RELIABILITY POLISH
-
-- Bundle 35 closed with V1 capture reliability polish status/failure-path hardening.
-- V1 dependable baseline remains manual Start Recording -> Stop & Send.
-- Stop & Send preserves the existing capture/send path.
-- Separate Stop and Send controls remain available.
-- Completed-capture duplicate re-submit behavior from separate Send was corrected.
-- New Start Recording resets send availability for a new capture.
-- Status and failure states were clarified for capture/send outcomes.
-- Diagnostics are de-emphasized/collapsed but remain expandable and accessibly available.
-- Selected-agent response rendering remains live.
-- Speak Reply / Stop Speak remain available.
-- Browser-native verbal send remains opportunistic only and is not dependable V1 baseline.
-- Unsupported verbal-command state does not block manual capture.
-- Observed watch item: selected-agent replies may blur “Roger” and “Chief of Staff” identity language; treat as future Architect-reviewed identity/prompt alignment concern, not Bundle 35 UI fix.
-- Observed watch item: recent flow may answer using prior captures/messages in current context; record only as recent-context behavior, not canonical memory.
-- No backend/Vault/schema/package/env/config/requester-authority/memory-authority/agent-identity/audio-pipeline expansion occurred.
-
-
-### Bundle 36 — CLOSED / V1 IDENTITY BOUNDARY ALIGNMENT
-
-- Roger Intercom remains shell/interface/capture/router, not an agent.
-- Chief of Staff remains selected/default user-facing agent.
-- `/capture` response copy and model-facing instruction wording were corrected to preserve identity boundary.
-- `roger-core` PR #91 and PR #92 were merged, deployed, and production-verified.
-- Identity prompt tests passed with boundary-respecting behavior for “Are you Roger or Chief of Staff?” and “Is Roger different from Chief of Staff?”.
-- Existing capture/send path and selected-agent routing were preserved.
-- Start Recording -> Stop & Send, separate Stop then Send, and completed-capture no-resubmit guard were preserved.
-- Speak Reply / Stop Speak and diagnostics accessibility were preserved without implying Roger Intercom is an agent.
-- Unsupported browser-native verbal command state does not block manual capture.
-- No backend/API/schema/Vault/package/env/config/deploy/requester-authority/memory-authority/agent-identity/audio-pipeline expansion observed.
-- Observed watch item: after a fresh deploy/browser refresh, the first response may not auto-speak until Speak Reply is tapped; subsequent responses auto-speak normally. This is non-blocking and tracked as a watch item only.
-
-
-
-### Bundle 37 — CLOSED / V1 VOICE PROVIDER LAYER PLANNING
-
-- Bundle 37 was docs-only planning/discovery.
-- Delivered docs in `roger-core`:
-  - `docs/VOICE_PROVIDER_LAYER_BUNDLE_37_PLAN.md`
-  - `docs/OBSERVED_CODE_MAP_BUNDLE_37_VOICE_PROVIDER_PLANNING.md`
-- Current `/capture` remains browser `MediaRecorder` capture.
-- Current loop remains Start Recording -> Stop & Send.
-- Current STT remains post-recording through existing server-side OpenAI transcription path.
-- Selected-agent routing begins after transcription.
-- Current TTS remains browser/client `speechSynthesis` with Speak Reply / Stop Speak and auto-speak behavior.
-- Browser-native verbal command support remains opportunistic only.
-- Roger Intercom remains shell/capture/navigation surface.
-- Chief of Staff or selected agent remains responder.
-- Proposed future adapter posture includes `VoiceProviderConfig`, STT adapter boundary, TTS adapter boundary, server-side secret handling, provider/model/voice swapping later.
-- Default candidates documented:
-  - STT: Deepgram Flux
-  - TTS: Deepgram Aura-1
-- Boundary confirmations:
-  - No runtime Deepgram calls added.
-  - No provider keys added.
-  - No package/env/config changes added.
-  - No backend/API/schema/Vault/requester-authority/memory-authority/agent-identity changes added.
-  - No new audio pipeline added.
-  - No always-listening or hidden recording behavior added.
-  - No Intercom-as-agent behavior added.
-  - No selected-agent routing redesign added.
-- Architect caveat: Architect could not independently fetch the raw GitHub doc paths during review; preserve exact doc paths for later verification. This is not a closeout blocker.
-
-
-
-### Bundle 38 — CLOSED / V1 AGENT DOSSIER MVP
-
-- Static/config-backed Agent Dossier MVP created in `roger-core`.
-- Chief of Staff mapped into seven-layer dossier structure.
-- Chief of Staff remains slug `chief_of_staff` and default selected user-facing agent.
-- Roger Intercom remains shell/capture/navigation, not an agent and not dossiered as an agent.
-- Candidate dossier/example remains inactive and not selectable.
-- Dossiers describe intended profile/scope only; they do not grant permissions.
-- No Vault access expansion.
-- No canonical memory promotion behavior.
-- No hidden memory writes.
-- No requester-authority activation.
-- No tool/action expansion.
-- No runtime dossier editor.
-- No full custom-agent UI.
-- No Laboratory activation.
-- No workspace/mission-room buildout.
-- No voice-provider runtime implementation.
-- `/capture` smoke after deploy remained good: selected agent visible, Start Recording -> Stop & Send works, response renders, Speak Reply / Stop Speak work, no visible Intercom-as-agent regression.
-
-### Bundle 39 — CLOSED / AGENT DOSSIER READ SURFACE + CANDIDATE AGENT REVIEW FOUNDATION
-
-- Read-only `/agents` dossier review surface added in `roger-core`.
-- Chief of Staff remains the only active/default selected user-facing agent.
-- `chief_of_staff` slug preserved.
-- Candidate/example dossier remains inactive and not selectable.
-- Public-safe/redacted dossier fields only.
-- Dossiers describe intended profile/scope and do not grant permissions.
-- Roger Intercom remains shell/capture/navigation, not an agent.
-- Selected-agent routing and `/capture` behavior preserved.
-- Start Recording -> Stop & Send smoke-verified after deploy.
-- Selected-agent response rendering preserved.
-- Speak Reply / Stop Speak preserved.
-- No runtime dossier editing.
-- No candidate activation.
-- No new active agents.
-- No Vault/memory/requester/tool/write authority expansion.
-- No backend/API/schema/package/env/config/deploy changes.
-- No workspace/mission-room, Laboratory, or voice-provider runtime implementation.
-
-
-### Bundle 40 — CLOSED / CANDIDATE DOSSIER REVIEW MECHANICS, NO ACTIVATION
-
-- Candidate review states added as static/config-backed governance metadata.
-- `/agents` displays candidate review posture in read-only/public-safe form.
-- Candidate remains inactive and not selectable.
-- Review status does not grant runtime authority.
-- Chief of Staff remains active/default selected user-facing agent.
-- Roger Intercom remains shell/interface/capture/navigation, not an agent.
-- Selected-agent routing and `/capture` behavior preserved.
-- No edit/create/approve/reject/activate controls.
-- No runtime dossier editing.
-- No candidate activation.
-- No custom-agent creation UI.
-- No memory/Vault/requester/tool/write authority expansion.
-- No backend/API/schema/package/env/config/deploy changes.
-- No workspace/mission-room, Laboratory, or voice-provider runtime implementation.
-
-### Bundle 41 — CLOSED / AGENT DOSSIER CANDIDATE READINESS WORKSTREAM, NO ACTIVATION
-
-- Bundle 41 implemented candidate readiness metadata/workstream posture in `roger-core`.
-- Implementation PRs: `roger-core` PR #97, #98, #99.
-- Candidate readiness metadata remains static/config-backed.
-- `/agents` shows public-safe candidate readiness metadata.
-- Candidate remains inactive and not selectable.
-- Chief of Staff remains the only active/default selected user-facing agent.
-- `chief_of_staff` slug remains preserved.
-- Roger Intercom remains shell/interface/capture/navigation, not an agent.
-- Selected-agent routing and `/capture` behavior remain preserved.
-- `accepted_for_future_activation` exists only as a type/documented future governed outcome and was not assigned to any candidate.
-- ADR-008 observed-code reconciliation was produced.
-- Boundary confirmations:
-  - No runtime dossier editing.
-  - No candidate activation.
-  - No custom-agent creation UI.
-  - No new active agents.
-  - No selected-agent routing change.
-  - No requester-authority change.
-  - No memory-authority change.
-  - No Vault access change.
-  - No canonical memory promotion behavior.
-  - No hidden memory writes.
-  - No tool/action expansion.
-  - No workspace/mission-room buildout.
-  - No Laboratory activation.
-  - No voice-provider runtime implementation.
-  - No Deepgram runtime calls.
-  - No backend/API/schema/package/env/config/deploy changes.
-
-
-### Bundle 45 — CLOSED / AGENT CREATOR SOURCE PROVENANCE REVIEW + READINESS UPGRADE ASSESSMENT, NO ACTIVATION
-
-- Agent Creator source provenance review completed.
-- Implementation PR: roger-core PR #104 / docs-only.
-- Private source pack was reviewed for provenance comparison only.
-- No raw/private source text was copied into public docs or public mirror.
-- Agent Creator remains candidate / inactive / not selectable.
-- readinessLabel remains needs_source_refs.
-- accepted_for_future_activation was not assigned.
-- No Agent Creator activation.
-- No runtime dossier editing.
-- No custom-agent creation UI.
-- No selected-agent routing changes.
-- No workspace/mission-room buildout.
-- No Laboratory activation.
-- No voice-provider runtime implementation.
-- No memory/Vault/requester/tool authority expansion.
-- Bundle 45 improved provenance confidence but did not change runtime/config state.
-- Readiness upgrade remains a separate future Architect-governed decision.
-
-### Bundle 46 — CLOSED / AGENT CREATOR READINESS LABEL UPDATE, NO ACTIVATION
-
-- Agent Creator readinessLabel updated to `ready_for_architect_review`.
-- Implementation PR: roger-core PR #105.
-- reviewState remains `proposed`.
-- `accepted_for_future_activation` remains not assigned.
-- Agent Creator remains candidate / inactive / not selectable.
-- Chief of Staff remains the only active/default selected user-facing agent.
-- No Agent Creator activation.
-- No runtime dossier editing.
-- No custom-agent creation UI.
-- No selected-agent routing changes.
-- No workspace/mission-room buildout.
-- No Laboratory activation.
-- No voice-provider runtime implementation.
-- No memory/Vault/requester/tool authority expansion.
-
-
-### Bundle 47 — CLOSED / AGENT CREATOR GOVERNANCE REVIEW OUTCOME, NO ACTIVATION
-
-- Agent Creator reviewState updated to `accepted_for_future_activation`.
-- readinessLabel remains `ready_for_architect_review`.
-- Agent Creator remains candidate / inactive / not selectable.
-- Chief of Staff remains the only active/default selected user-facing agent.
-- No Agent Creator activation.
-- No selected-agent routing changes.
-- No runtime dossier editing.
-- No custom-agent creation UI.
-- No workspace/mission-room buildout.
-- No Laboratory activation.
-- No voice-provider runtime implementation.
-- No memory/Vault/requester/tool authority expansion.
-
-### Bundle 48 — CLOSED / AGENT CREATOR ACTIVATION PLANNING CONTRACT + FUTURE AGENT CREATION WORKSPACE BRIEF, NO ACTIVATION
-
-- implementation_prs: roger-core PR #107 / docs-only.
-- Agent Creator activation planning contract completed.
-- Future Agent Creation Workspace brief completed as planning only.
-- Agent Creator may eventually help draft and organize proposed agents, but must not activate agents or grant authority.
-- Future Agent Creation Workspace remains future architecture only.
-- No Agent Creator activation.
-- No selected-agent routing changes.
-- No runtime dossier editing.
-- No custom-agent creation UI.
-- No workspace/mission-room implementation.
-- No Laboratory activation.
-- No voice-provider runtime implementation.
-- No memory/Vault/requester/tool authority expansion.
-- No backend/API/schema/package/env/config/deploy changes.
-- No private/raw Agent Creator source text copied.
-
-
-### Bundle 49 — CLOSED / PUBLIC ARCHITECTURE CONTINUITY INDEX CLOSEOUT, SANITIZED/NON-CANONICAL
-
-- implementation_prs: roger-core PR #108 / docs-only.
-- Activation surface audit completed.
-- Minimum activation PR plan completed.
-- Active/default source of truth appears split between roger-core canonical display/config and Vault/control active-agent paths.
-- Future Agent Creator activation is not a dossier label flip.
-- Future activation likely requires compatibility with `/v1/agents`, `/v1/agents/active`, and `/v1/agent/switch`.
-- No Agent Creator activation.
-- No selected-agent routing changes.
-- No runtime dossier editing.
-- No custom-agent creation UI.
-- No workspace/mission-room implementation.
-- No Laboratory activation.
-- No voice-provider runtime implementation.
-- No memory/Vault/requester/tool authority expansion.
-
-### Bundle 50 — CLOSED / PUBLIC ARCHITECTURE CONTINUITY INDEX CLOSEOUT, SANITIZED/NON-CANONICAL
-
-- implementation_prs: roger-core PR #109 / docs-only.
-- Control-plane compatibility verification completed.
-- Agent Creator remains static candidate dossier metadata only.
-- Agent Creator was not proven as a runtime-registered backend/control-plane active-agent switch target.
-- `/v1/agent/switch` was treated as mutating and was not called.
-- No Agent Creator activation.
-- No live switch to `agent_creator`.
-- No selected-agent routing changes.
-- No runtime dossier editing.
-- No custom-agent creation UI.
-- No backend/API/schema/package/env/config/deploy changes.
-- No workspace/mission-room implementation.
-- No Laboratory activation.
-- No voice-provider runtime implementation.
-- No memory/Vault/requester/tool authority expansion.
-- No private/raw Agent Creator source text copied.
-
-
-### Bundle 51 — CLOSED / AGENT CREATOR CONTROL-PLANE REGISTRATION CONTRACT, NO ACTIVATION
-
-- Public mirror closeout for accepted docs-only implementation in `roger-core`.
-- Implementation PR: roger-core PR #110 / docs-only.
-- Bundle 51 completed the Agent Creator Control-Plane Registration Contract.
-- Bundle 51 completed an observed-code map for Agent Creator control-plane registration.
-- This mirror entry is sanitized, non-canonical, and navigation-only; it is not architecture expansion.
-- Agent Creator remains candidate / inactive / not selectable.
-- Agent Creator cannot become a valid runtime switch target merely from dossier readiness or `accepted_for_future_activation`.
-- Dossier readiness must not be treated as runtime activation.
-- Unknown or unsupported slugs must fail closed.
-- Registration must not be treated as authority.
-- Switchability must not be treated as Vault access.
-- Active selection must not be treated as memory-scope expansion.
-- No runtime proof, permission grant, canonical memory promotion, hidden write, or mutating endpoint authority is implied.
-- Activation remains blocked pending a separate Architect-approved backend/Vault/control-plane architecture bundle.
-
-### Bundle 52 — CLOSED / V1 CUSTOM AGENT PATH SELECTION + FIRST PRACTICAL READINESS CONTRACT, NO ACTIVATION
-
-- Public mirror closeout for accepted docs-only implementation in `roger-core`.
-- Implementation PR: roger-core PR #111 / docs-only.
-- Bundle 52 is closed as docs/discovery/design-contract only, pending final public mirror verification.
-- Bundle 52 selected College Hunks Captain Assistant as the preferred first practical custom-agent readiness target.
-- This is readiness analysis only.
-- Bundle 52 did not activate College Hunks Captain Assistant.
-- Bundle 52 did not prove runtime support for College Hunks Captain Assistant.
-- Bundle 52 did not approve selected-agent routing changes.
-- Bundle 52 did not approve runtime registration.
-- Bundle 52 did not approve switch-target validity.
-- Bundle 52 did not approve Vault access, requester authority, tool authority, write-back authority, or permission expansion.
-- Bundle 52 did not activate Agent Creator.
-- Bundle 52 preserved Agent Creator’s Bundle 51 control-plane boundary.
-- Agent Creator remains candidate / inactive / not selectable.
-- Agent Creator activation remains blocked pending separate Architect-approved backend/Vault/control-plane architecture.
-- Bundle 52 defined a V1 context packet / write-back design sketch.
-- Bundle 52 documented stateless AI helpers as proposed internal harness/helper calls only, not agents.
-- Further implementation requires a separate Architect-approved Bundle 53.
-
-
-## Recommended Next Direction
-
-- Bundle 52 has completed the V1 custom-agent path selection and first practical readiness contract (docs/discovery/design-contract only, no activation).
-- Next work should be a separate Architect-approved Bundle 53 proposal.
-- Initial planning preference: begin with the earliest safe implementation seam for the College Hunks Captain Assistant path, not activation.
-- Likely staged direction may include (planning guidance only; not approved implementation):
-  - 53A current-state / observed-code confirmation, if needed.
-  - 53B College Hunks Captain Assistant dossier/source association, no activation.
-  - 53C context packet assembly for one selected custom agent using read-only inputs only.
-  - 53D Roger Intercom selected-agent capture path only if routing support is verified safe.
-  - 53E archive-only write-back / diagnostics, with no canonical memory promotion.
-  - 53F activation eligibility review only after registration, permissions, routing, and write-back boundaries are verified.
-- Preserve sanitized, non-canonical, navigation-only mirror posture and all existing no-activation boundaries unless separately Architect-approved.
-
-## Open Gates
-
-- Architect should verify this public mirror raw URL for current continuity retrieval state.
-- Roger Core deployment topology remains unresolved.
-- Do not assume `/opt/roger-core` exists.
-- Before production requester-authority activation, protected Vault mutation, or canonical promotion, require approved cross-process requester-context provenance/signing/verification implementation.
-
-## Hard Non-Goals Preserved
-
-- no product runtime changes
-- no endpoint implementation
-- no UI implementation
-- no migration
-- no package/Docker/deploy/config changes
-- no canonical memory writes
-- no canonical promotion
-- no context-builder integration
-- no requester-authority activation
-- no durable user-principal production enablement
-- no protected Vault mutation enablement
-- no raw Vault expansion
-- no COS broad raw Vault access
-- no permission model expansion
-- no browser/client state as authority
-- no Vault secret exposure
-- no service/operator-proxy expansion into general write authority
-- no public exposure of private repo contents
-- no instruction-field update
-
-
-### Bundle 42 — CLOSED / CANDIDATE ACTIVATION CONTRACT, PLANNING/DISCOVERY ONLY
-
-- Bundle 42 closeout is docs-only planning/discovery in `roger-core`.
-- Implementation PR: `roger-core` PR #100 (docs-only).
-- Delivered docs in `roger-core`:
-  - `docs/CANDIDATE_ACTIVATION_CONTRACT_BUNDLE_42.md`
-  - `docs/OBSERVED_CODE_MAP_BUNDLE_42_CANDIDATE_ACTIVATION_CONTRACT.md`
-- Candidate Activation Contract is defined as planning/discovery only.
-- Activation is documented as a governed future architecture event, not a UI toggle, dossier status change alone, config-only change, readiness label, prompt copy change, automatic selection, or automatic permission/memory/Vault/tool grant.
-- Eligibility gates and approval requirements are documented.
-- Distinctions are preserved between readiness label, review status, `accepted_for_future_activation`, active production profile, selected/active runtime agent, and permissioned authority.
-- Dossiers may describe intended scope/role/tools/memory posture, but enforcement remains outside the dossier.
-- ADR-008-style observed-code/planning reconciliation was produced.
-- No runtime/source behavior changed.
-- Boundary confirmations:
-  - No candidate activation.
-  - No runtime dossier editing.
-  - No custom-agent creation UI.
-  - No new active agents.
-  - No selected-agent routing changes.
-  - No requester-authority changes.
-  - No memory-authority changes.
-  - No Vault access changes.
-  - No canonical memory promotion.
-  - No hidden memory writes.
-  - No tool/action expansion.
-  - No workspace/mission-room buildout.
-  - No Laboratory activation.
-  - No voice-provider runtime implementation.
-  - No Deepgram runtime calls.
-  - No backend/API/schema/package/env/config/deploy changes.
-  - No assignment of `accepted_for_future_activation` to any candidate.
-
-
-### Bundle 43 — CLOSED / AGENT CREATOR SOURCE INTAKE + ADAPTATION MAP, NO ACTIVATION
-
-- Agent Creator source intake/adaptation map completed.
-- Corrective docs-only boundary/provenance patch applied.
-- Agent Creator remains source material only.
-- No Agent Creator activation.
-- No formal Agent Creator candidate dossier.
-- No runtime dossier editing.
-- No custom-agent creation UI.
-- No workspace/mission-room buildout.
-- No Laboratory activation.
-- No voice-provider runtime implementation.
-- No memory/Vault/requester/tool authority expansion.
-- Codex used Operator-provided Agent Creator source export/context, not direct raw Agent Creator attachment ingestion.
-
-### Bundle 44 — CLOSED / AGENT CREATOR STATIC CANDIDATE DOSSIER, NO ACTIVATION
-
-- Agent Creator static candidate dossier added in `roger-core`.
-- implementation_prs: roger-core PR #103.
-- candidate slug: `agent_creator`.
-- candidate status: inactive / not selectable.
-- review state: proposed.
-- readiness label: needs_source_refs.
-- `accepted_for_future_activation` was not assigned.
-- Agent Creator remains candidate/source-derived review material only.
-- Chief of Staff remains the only active/default selected user-facing agent.
-- No Agent Creator activation.
-- No selected-agent routing changes.
-- No runtime dossier editing.
-- No custom-agent creation UI.
-- No workspace/mission-room buildout.
-- No Laboratory activation.
-- No voice-provider runtime implementation.
-- No memory/Vault/requester/tool authority expansion.
-- Provenance posture: Bundle 44 used accepted Bundle 43 public-safe source intake/adaptation material; Bundle 43 used Operator-provided Agent Creator source export/context, not direct raw Agent Creator attachment ingestion by Codex.
-- Direct raw-source review remains a provenance gap before any readiness upgrade.
+# Roger OS Public Architecture Continuity Index
+
+- **Status:** Public-safe continuity index source maintained in private `aboriginalien/roger-core`.
+- **Published target:** `aboriginalien/roger-os-public-architecture/main/ARCHITECTURE_CONTINUITY_INDEX.md`
+- **Stable Lead Build review URL:** https://raw.githubusercontent.com/aboriginalien/roger-os-public-architecture/main/ARCHITECTURE_CONTINUITY_INDEX.md
+- **Source file:** `docs/ops/public/ARCHITECTURE_CONTINUITY_INDEX_SOURCE.md`
+- **Last updated:** 2026-06-29 00:00 UTC
+
+This public index is a sanitized review/navigation surface. It does not replace private repository reality, GitHub checks, deploy verification, Lead Build judgment, Architect acceptance, merge approval, or ADR-008 observed-code reconciliation.
+
+## Current Build Status
+
+- **Current active roger-core PR:** PR #207 — ADR-013 operational correction: public Architecture Continuity Index publishing.
+- **Current readiness state:** `needs Operator input` until PR #207 checks, conflicts, Codex/GitHub review comments, and public publication state are known.
+- **Publication state:** source file and controlled publishing mechanism are prepared in `roger-core`; public publication requires the `ROGER_PUBLIC_ARCHITECTURE_PUBLISH_TOKEN` repository secret.
+- **Runtime behavior changed:** no. This is docs/workflow/script-only publishing support.
+
+## Active PR Review Board
+
+### PR #207 — ADR-013 operational correction: roger-core publishes public Architecture Continuity Index
+
+- **PR number:** `#207`
+- **PR title:** `ADR-013 operational correction — roger-core publishes public Architecture Continuity Index`
+- **PR URL:** https://github.com/aboriginalien/roger-core/pull/207
+- **Branch:** `work`
+- **Readiness state:** `needs Operator input`
+- **Changed files list:**
+  - `.github/workflows/publish-architecture-continuity-index.yml` — manual controlled publish workflow.
+  - `scripts/publish_architecture_continuity_index.sh` — fail-closed source-to-public-repo publish script.
+  - `docs/ops/public/ARCHITECTURE_CONTINUITY_INDEX_SOURCE.md` — public-safe source for the Architecture Continuity Index.
+  - `docs/setup/PUBLIC_ARCHITECTURE_PUBLISHING.md` — setup note for the required repository secret name.
+  - `docs/adr/ADR-013_codex_pr_evidence_packet_and_active_build_evidence_handoff.md` — operational correction for public index publication.
+  - `docs/templates/CODEX_PR_EVIDENCE_PACKET_TEMPLATE.md` — Lead Build Review Surface template additions for public index state.
+  - `docs/templates/ACTIVE_BUILD_EVIDENCE_HANDOFF_TEMPLATE.md` — handoff template additions for public index state.
+  - `docs/ops/codex/CODEX_CONTINUITY_WORKFLOW.md` — workflow rule requiring source/public-index updates.
+  - `docs/ops/ACTIVE_PR_EVIDENCE_INDEX.md` — private active evidence entry updated for PR #207.
+  - `docs/ops/ARCHITECTURE_CONTINUITY_INDEX.md` — stale public pointer corrected to the public raw URL and private source path.
+- **Checks/status:** `unknown` — local static checks pending in this patch; GitHub checks unavailable in this environment.
+- **Conflicts state:** `unknown` — PR #207 conflict state could not be verified because this environment has no configured `origin` remote and no GitHub CLI.
+- **Preview/deploy/live verification status where applicable:** `not applicable` for docs/workflow-only patch; public raw publication is the required external verification.
+- **Codex/GitHub review comments summary:** `unknown` — review comments unavailable in this environment.
+- **Unresolved/resolved review-comment state:** `unknown` until GitHub review comments can be inspected.
+- **Material findings:** PR #207 must not be marked ready for Lead Build review until checks, conflicts, review comments, and public publication state are known.
+- **Patches applied after review comments:** none known in this environment.
+- **ADR-008 obligation/status:** `not required` for this docs/workflow/script-only controlled-publication patch; no runtime, storage, provider, model, memory, Vault, routing, writeback, tool, or agent-identity behavior changed.
+- **Runtime/storage/provider/model/memory/Vault/routing/writeback/tool/agent-identity impact statement:** no behavior change; the patch only adds documentation, a manual GitHub Actions workflow, and a controlled publish script for a sanitized Markdown index.
+- **Forbidden-evidence confirmation:** no credentials, PATs, deploy keys, tokens, env values, provider payloads, hidden prompts, raw Operator prompts, raw Codex task prompts, prompt chains/logs, Vault data, requester-private records, raw audio, or secret-bearing screenshots are included.
+- **Remaining gaps:** configure repository secret; run workflow or script with the secret; verify the public raw URL; update PR #207 body Lead Build Review Surface after publication; verify GitHub checks/conflicts/review comments.
+- **Exact Lead Build request:** Lead Build: do not merge or mark PR #207 ready yet; first verify checks, conflicts, review comments, and public publication state, then review the PR body Lead Build Review Surface against changed files and this public index source.
+- **Exact Operator request, if any:** Add the `ROGER_PUBLIC_ARCHITECTURE_PUBLISH_TOKEN` secret to `aboriginalien/roger-core` with least privilege to update `aboriginalien/roger-os-public-architecture`, then run the manual publish workflow if Codex cannot access the secret.
+- **Last updated timestamp:** 2026-06-29 00:00 UTC
+
+## PR Timing / Readiness States
+
+- `PR created, waiting for checks`
+- `waiting for preview/deploy`
+- `waiting for Codex/GitHub review`
+- `needs Codex patch`
+- `patched, waiting for recheck`
+- `ready for Lead Build review`
+- `needs Operator input`
+- `needs Architect review`
+- `ready to merge after Lead Build`
+- `merged`
+- `closed`
+
+**Timing rule:** PR creation is not Lead Build review readiness. Lead Build review readiness is not merge readiness.
+
+## Latest PR Evidence Entry
+
+PR #207 is the latest public-safe evidence entry. Its current state is `needs Operator input` because publication and GitHub-side checks/conflicts/review comments are not yet verified.
+
+## Sprint / ADR Status
+
+- **ADR-013:** accepted; this patch is an operational correction to the accepted ADR-013 and does not create ADR-014.
+- **Sprint 15 voice:** not restarted or changed by this docs/workflow patch.
+- **ADR-008:** remains required for meaningful architecture/runtime/storage/authority/provider/memory changes and is not replaced by this public index.
+
+## Durable Architecture Continuity
+
+- `aboriginalien/roger-core` remains the private core/runtime/build repository and primary Codex task repo.
+- `aboriginalien/roger-os-public-architecture` is the public architecture/continuity surface for the sanitized Architecture Continuity Index.
+- `aboriginalien/roger-vault` remains private Vault-specific work only; access does not imply broader authority, memory access, requester-private access, or permission expansion.
+
+## Accepted ADR Index
+
+- **ADR-008:** observed-code reconciliation remains the stronger code-reality mechanism where required.
+- **ADR-009:** internal AI workers remain non-authority harness helpers unless separately approved.
+- **ADR-010:** largest-safe-bundle doctrine remains bounded by stop gates and review requirements.
+- **ADR-011:** anti-ghost-build posture remains in force; evidence must describe real repo/deploy state.
+- **ADR-012:** model/provider identity separation remains unchanged.
+- **ADR-013:** PR Evidence Packet, Active Build Evidence Handoff, Lead Build Review Surface, private active evidence index, and public-safe Architecture Continuity Index source/publish workflow are evidence/navigation artifacts only.
+
+## Historical Bundle / Sprint Log
+
+- Sprint 13: Gemini Provider Parity Catch-Up and Safe Activation Readiness closed.
+- Sprint 14: ADR-013 Codex PR Evidence Packet and Active Build Evidence Handoff closed; ADR-013 accepted.
+- Sprint 15A: Gemini Runtime Eligibility Parity closed.
+- Current correction: ADR-013 operational correction adds a controlled public Architecture Continuity Index publication path without changing runtime/provider/model/Vault/memory/routing/writeback/tool/agent-identity behavior.
