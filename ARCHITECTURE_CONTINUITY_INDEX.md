@@ -10,44 +10,57 @@ This public index is a sanitized review/navigation surface. It does not replace 
 
 ## Current Build Status
 
-- **Current active roger-core PR:** PR #207 — ADR-013 operational correction: public Architecture Continuity Index publishing.
-- **Current readiness state:** `needs Operator input` until PR #207 checks, conflicts, Codex/GitHub review comments, and public publication state are known.
-- **Publication state:** source file and controlled publishing mechanism are prepared in `roger-core`; public publication requires the `ROGER_PUBLIC_ARCHITECTURE_PUBLISH_TOKEN` repository secret.
-- **Runtime behavior changed:** no. This is docs/workflow/script-only publishing support.
+- **Current active roger-core PR:** PR #208 — ADR-013: Add controlled public Architecture Continuity Index publishing.
+- **Current readiness state:** `merged` based on Operator-provided post-merge/publication evidence for PR #208.
+- **Controlled publish mechanism:** `installed` — the manual GitHub Actions workflow `Publish Architecture Continuity Index` and fail-closed publish script exist in `roger-core`.
+- **Publication state:** `verified/successful` — Operator reported the workflow ran successfully and updated the public raw Architecture Continuity Index after PR #208.
+- **Runtime behavior changed:** no. This is docs/workflow/script-only publishing support and changes no runtime/provider/model/Vault/memory/routing/writeback/tool/agent-identity behavior.
 
 ## Active PR Review Board
+
+### PR #208 — ADR-013: Add controlled public Architecture Continuity Index publishing
+
+- **PR number:** `#208`
+- **PR title:** `ADR-013: Add controlled public Architecture Continuity Index publishing`
+- **PR URL:** https://github.com/aboriginalien/roger-core/pull/208
+- **Branch:** `work`
+- **Status:** `merged` — Operator reported PR #208 is the implementation path after successful workflow publication.
+- **Changed files list:**
+  - `.github/workflows/publish-architecture-continuity-index.yml` — manual controlled public-index publish workflow.
+  - `scripts/publish_architecture_continuity_index.sh` — fail-closed source-to-public-repo publish script.
+  - `docs/ops/public/ARCHITECTURE_CONTINUITY_INDEX_SOURCE.md` — public-safe source for the Architecture Continuity Index.
+  - `docs/setup/PUBLIC_ARCHITECTURE_PUBLISHING.md` — setup note for the repository secret name and workflow.
+  - `docs/adr/ADR-013_codex_pr_evidence_packet_and_active_build_evidence_handoff.md` — ADR-013 operational rule for public index publication.
+  - `docs/templates/CODEX_PR_EVIDENCE_PACKET_TEMPLATE.md` — Lead Build Review Surface template additions for public index state.
+  - `docs/templates/ACTIVE_BUILD_EVIDENCE_HANDOFF_TEMPLATE.md` — handoff template additions for public index state.
+  - `docs/ops/codex/CODEX_CONTINUITY_WORKFLOW.md` — workflow rule requiring source/public-index updates.
+  - `docs/ops/ACTIVE_PR_EVIDENCE_INDEX.md` — private active evidence entry updated for PR #208 state.
+  - `docs/ops/ARCHITECTURE_CONTINUITY_INDEX.md` — public pointer corrected to the public raw URL and private source path.
+- **Checks/status:** `passing` — Operator reported the publish workflow completed successfully; local static checks for this evidence refresh passed.
+- **Conflicts state:** `none` — no conflicts reported for merged PR #208.
+- **Preview/deploy/live verification status where applicable:** `not applicable` for docs/workflow-only patch; public raw publication is the external verification.
+- **Publication state:** `verified/successful` — the controlled publish workflow updated the public raw Architecture Continuity Index after PR #208.
+- **Codex/GitHub review comments summary:** `none material reported` for this publication-state evidence refresh.
+- **Unresolved/resolved review-comment state:** `none material reported`; PR #208 is no longer blocked on publication.
+- **Material findings:** none for the docs/workflow/script-only publication path.
+- **Patches applied after review comments:** this evidence refresh records post-PR #208 publication reality; it does not change runtime behavior.
+- **ADR-008 obligation/status:** `not required` for this docs/workflow/script-only controlled-publication patch; no runtime, storage, provider, model, memory, Vault, routing, writeback, tool, or agent-identity behavior changed.
+- **Runtime/storage/provider/model/memory/Vault/routing/writeback/tool/agent-identity impact statement:** no behavior change; the controlled public index mechanism and this evidence update are documentation/workflow/script-only.
+- **Forbidden-evidence confirmation:** no credentials, PATs, deploy keys, tokens, env values, provider payloads, hidden prompts, raw Operator prompts, raw Codex task prompts, prompt chains/logs, Vault data, requester-private records, raw audio, or secret-bearing screenshots are included.
+- **Remaining gaps:** none for the ADR-013 public index publication path; continue using repo/check/deploy/publication reality as stronger evidence than this index text.
+- **Exact Lead Build request:** Lead Build: treat PR #208 as the merged implementation path for ADR-013 controlled public Architecture Continuity Index publishing, with publication verified successful and no runtime/provider/model/Vault/memory/routing/writeback/tool/agent-identity impact.
+- **Exact Operator request, if any:** none.
+- **Last updated timestamp:** 2026-06-29 00:00 UTC
 
 ### PR #207 — ADR-013 operational correction: roger-core publishes public Architecture Continuity Index
 
 - **PR number:** `#207`
 - **PR title:** `ADR-013 operational correction — roger-core publishes public Architecture Continuity Index`
 - **PR URL:** https://github.com/aboriginalien/roger-core/pull/207
-- **Branch:** `work`
-- **Readiness state:** `needs Operator input`
-- **Changed files list:**
-  - `.github/workflows/publish-architecture-continuity-index.yml` — manual controlled publish workflow.
-  - `scripts/publish_architecture_continuity_index.sh` — fail-closed source-to-public-repo publish script.
-  - `docs/ops/public/ARCHITECTURE_CONTINUITY_INDEX_SOURCE.md` — public-safe source for the Architecture Continuity Index.
-  - `docs/setup/PUBLIC_ARCHITECTURE_PUBLISHING.md` — setup note for the required repository secret name.
-  - `docs/adr/ADR-013_codex_pr_evidence_packet_and_active_build_evidence_handoff.md` — operational correction for public index publication.
-  - `docs/templates/CODEX_PR_EVIDENCE_PACKET_TEMPLATE.md` — Lead Build Review Surface template additions for public index state.
-  - `docs/templates/ACTIVE_BUILD_EVIDENCE_HANDOFF_TEMPLATE.md` — handoff template additions for public index state.
-  - `docs/ops/codex/CODEX_CONTINUITY_WORKFLOW.md` — workflow rule requiring source/public-index updates.
-  - `docs/ops/ACTIVE_PR_EVIDENCE_INDEX.md` — private active evidence entry updated for PR #207.
-  - `docs/ops/ARCHITECTURE_CONTINUITY_INDEX.md` — stale public pointer corrected to the public raw URL and private source path.
-- **Checks/status:** `unknown` — local static checks pending in this patch; GitHub checks unavailable in this environment.
-- **Conflicts state:** `unknown` — PR #207 conflict state could not be verified because this environment has no configured `origin` remote and no GitHub CLI.
-- **Preview/deploy/live verification status where applicable:** `not applicable` for docs/workflow-only patch; public raw publication is the required external verification.
-- **Codex/GitHub review comments summary:** `unknown` — review comments unavailable in this environment.
-- **Unresolved/resolved review-comment state:** `unknown` until GitHub review comments can be inspected.
-- **Material findings:** PR #207 must not be marked ready for Lead Build review until checks, conflicts, review comments, and public publication state are known.
-- **Patches applied after review comments:** none known in this environment.
-- **ADR-008 obligation/status:** `not required` for this docs/workflow/script-only controlled-publication patch; no runtime, storage, provider, model, memory, Vault, routing, writeback, tool, or agent-identity behavior changed.
-- **Runtime/storage/provider/model/memory/Vault/routing/writeback/tool/agent-identity impact statement:** no behavior change; the patch only adds documentation, a manual GitHub Actions workflow, and a controlled publish script for a sanitized Markdown index.
+- **Status:** `superseded/closed/not active` — PR #208 is the active merged implementation path for controlled public Architecture Continuity Index publishing.
+- **Publication state:** superseded by PR #208 verified/successful publication.
+- **Runtime/storage/provider/model/memory/Vault/routing/writeback/tool/agent-identity impact statement:** none; PR #207 is not the active implementation path.
 - **Forbidden-evidence confirmation:** no credentials, PATs, deploy keys, tokens, env values, provider payloads, hidden prompts, raw Operator prompts, raw Codex task prompts, prompt chains/logs, Vault data, requester-private records, raw audio, or secret-bearing screenshots are included.
-- **Remaining gaps:** configure repository secret; run workflow or script with the secret; verify the public raw URL; update PR #207 body Lead Build Review Surface after publication; verify GitHub checks/conflicts/review comments.
-- **Exact Lead Build request:** Lead Build: do not merge or mark PR #207 ready yet; first verify checks, conflicts, review comments, and public publication state, then review the PR body Lead Build Review Surface against changed files and this public index source.
-- **Exact Operator request, if any:** Add the `ROGER_PUBLIC_ARCHITECTURE_PUBLISH_TOKEN` secret to `aboriginalien/roger-core` with least privilege to update `aboriginalien/roger-os-public-architecture`, then run the manual publish workflow if Codex cannot access the secret.
 - **Last updated timestamp:** 2026-06-29 00:00 UTC
 
 ## PR Timing / Readiness States
@@ -68,7 +81,7 @@ This public index is a sanitized review/navigation surface. It does not replace 
 
 ## Latest PR Evidence Entry
 
-PR #207 is the latest public-safe evidence entry. Its current state is `needs Operator input` because publication and GitHub-side checks/conflicts/review comments are not yet verified.
+PR #208 is the latest public-safe evidence entry. Its current state is `merged`; checks are recorded as passing, conflicts as none, and public Architecture Continuity Index publication as verified/successful based on Operator-reported workflow success. PR #207 is superseded/closed/not the active implementation path.
 
 ## Sprint / ADR Status
 
@@ -96,4 +109,4 @@ PR #207 is the latest public-safe evidence entry. Its current state is `needs Op
 - Sprint 13: Gemini Provider Parity Catch-Up and Safe Activation Readiness closed.
 - Sprint 14: ADR-013 Codex PR Evidence Packet and Active Build Evidence Handoff closed; ADR-013 accepted.
 - Sprint 15A: Gemini Runtime Eligibility Parity closed.
-- Current correction: ADR-013 operational correction adds a controlled public Architecture Continuity Index publication path without changing runtime/provider/model/Vault/memory/routing/writeback/tool/agent-identity behavior.
+- Current correction: ADR-013 operational correction has an installed and verified/successful controlled public Architecture Continuity Index publication path after PR #208, without changing runtime/provider/model/Vault/memory/routing/writeback/tool/agent-identity behavior.
